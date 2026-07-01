@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biens en vente — Bangui Patrimoine | Immobilier à Bangui, RCA</title>
+  <meta name="description" content="Consultez notre sélection de biens immobiliers en vente à Bangui : terrains constructibles, maisons, villas, appartements et immeubles de rapport. Accompagnement complet pour la diaspora.">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://bangui-patrimoine.fr/biens-en-vente.html">
+  <meta property="og:title" content="Biens en vente — Bangui Patrimoine | Immobilier à Bangui">
+  <meta property="og:description" content="Terrains, villas, maisons et investissements immobiliers à Bangui. Accompagnement de la diaspora depuis la France.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200&q=80">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="Bangui Patrimoine">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Biens en vente — Bangui Patrimoine">
+  <meta name="twitter:description" content="Immobilier à Bangui pour la diaspora centrafricaine.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200&q=80">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="apple-touch-icon" href="favicon.svg">
+
+  <!-- View Transitions -->
+  <meta name="view-transition" content="same-origin">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy:  { DEFAULT: '#0C2340', fonce: '#061628', clair: '#163660' },
+            gold:  { DEFAULT: '#B8912A', clair: '#D4AE55', pale: '#F0DFA0' },
+            terre: { DEFAULT: '#6B3A2A' },
+            gris:  { DEFAULT: '#F6F4F0', moyen: '#E4E0D8' },
+          },
+          fontFamily: {
+            sans:    ['Inter', 'system-ui', 'sans-serif'],
+            serif:   ['Cormorant Garamond', 'Georgia', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- View Transition direction -->
+  <script>
+  !function(){
+    var d=sessionStorage.getItem('vtDir');
+    sessionStorage.removeItem('vtDir');
+    if(!d) return;
+    var s=document.createElement('style');
+    if(d==='f'){
+      s.textContent='::view-transition-old(root){animation:vt-out-left .35s cubic-bezier(.34,1.56,.64,1) both}::view-transition-new(root){animation:vt-in-right .35s cubic-bezier(.34,1.56,.64,1) both}';
+    }else{
+      s.textContent='::view-transition-old(root){animation:vt-out-right .35s cubic-bezier(.34,1.56,.64,1) both}::view-transition-new(root){animation:vt-in-left .35s cubic-bezier(.34,1.56,.64,1) both}';
+    }
+    document.head.appendChild(s);
+  }();
+  </script>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-sans text-[#222] bg-gris leading-relaxed min-h-screen flex flex-col">
+
+  <!-- ===== TOPBAR ===== -->
+  <div class="bg-navy-fonce text-white/60 text-[0.76rem] py-2 px-6 hidden md:block">
+    <div class="max-w-[1200px] mx-auto flex items-center justify-between">
+      <div class="flex items-center gap-6">
+        <span class="flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-gold/70"></i> Cabinet basé à Paris &mdash; Opérations à Bangui, RCA</span>
+        <span class="flex items-center gap-1.5"><i class="fa-regular fa-clock text-gold/70"></i> Consultations du lun. au ven. 9h–19h (heure de Paris)</span>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="https://www.facebook.com/people/Bangui-Patrimoine/61562111173801/" target="_blank" class="flex items-center gap-1.5 hover:text-gold transition-colors duration-200"><i class="fa-brands fa-facebook-f text-gold/70"></i> Facebook</a>
+        <a href="https://www.instagram.com/bangui.patrimoine/" target="_blank" class="flex items-center gap-1.5 hover:text-gold transition-colors duration-200"><i class="fa-brands fa-instagram text-gold/70"></i> Instagram</a>
+        <a href="https://www.tiktok.com/@banguipatrimoine" target="_blank" class="flex items-center gap-1.5 hover:text-gold transition-colors duration-200"><i class="fa-brands fa-tiktok text-gold/70"></i> TikTok</a>
+        <a href="https://wa.me/33XXXXXXXXX" class="flex items-center gap-1.5 hover:text-gold transition-colors duration-200"><i class="fa-brands fa-whatsapp text-gold/70"></i> WhatsApp</a>
+        <a href="mailto:contact@bangui-patrimoine.fr" class="flex items-center gap-1.5 hover:text-gold transition-colors duration-200"><i class="fa-regular fa-envelope text-gold/70"></i> contact@bangui-patrimoine.fr</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== HEADER ===== -->
+  <header class="sticky top-0 z-50 bg-white border-b border-gris-moyen shadow-[0_2px_12px_rgba(12,35,64,0.07)]">
+    <div class="max-w-[1200px] mx-auto flex items-center justify-between px-6 py-3.5 relative">
+      <a href="index.html" class="flex items-center gap-3 no-underline">
+        <svg class="w-[44px] h-[44px] shrink-0" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="4" y="30" width="36" height="3" rx="1.5" fill="#0C2340"/>
+          <path d="M7 30 L7 18 L18 10 L29 18 L29 30" stroke="#0C2340" stroke-width="1.8" fill="none" stroke-linejoin="round"/>
+          <path d="M5 19 L18 9 L31 19" stroke="#B8912A" stroke-width="2" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+          <rect x="14.5" y="22" width="7" height="8" rx="0.8" fill="none" stroke="#0C2340" stroke-width="1.5"/>
+          <rect x="23" y="20" width="4.5" height="4" rx="0.5" fill="none" stroke="#B8912A" stroke-width="1.3"/>
+        </svg>
+        <div class="leading-tight">
+          <strong class="block font-serif text-[1.15rem] font-bold text-navy tracking-[0.5px]">Bangui Patrimoine</strong>
+          <span class="text-[0.65rem] text-gold tracking-[2.5px] uppercase font-semibold font-sans">Paris &bull; Bangui</span>
+        </div>
+      </a>
+
+      <button id="menuToggle" class="hidden max-md:block bg-transparent border-none text-navy text-[1.4rem] cursor-pointer">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <nav id="navMenu" class="flex gap-7 text-sm max-md:absolute max-md:top-full max-md:right-0 max-md:w-3/4 max-md:bg-white max-md:flex-col max-md:p-6 max-md:pt-16 max-md:gap-4 max-md:opacity-0 max-md:pointer-events-none max-md:translate-y-[-10px] max-md:transition-all max-md:duration-300 max-md:ease-out max-md:border-t max-md:border-gris-moyen max-md:shadow-[0_8px_20px_rgba(12,35,64,0.08)]">
+        <a href="index.html" style="--stagger:1" class="text-[#333] no-underline font-medium hover:text-navy transition-colors duration-200">Accueil</a>
+        <a href="index.html#apropos" style="--stagger:2" class="text-[#333] no-underline font-medium hover:text-navy transition-colors duration-200">À propos</a>
+        <a href="biens-en-vente.html" style="--stagger:3" class="text-gold no-underline font-semibold transition-colors duration-200">Biens en vente</a>
+        <a href="index.html#contact" style="--stagger:4" class="bg-navy text-white no-underline text-center px-5 py-2.5 rounded font-semibold hover:bg-navy-clair transition-colors duration-200 max-md:block">Consultation gratuite</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Overlay -->
+  <div id="menuOverlay" class="fixed inset-0 bg-black/40 z-40 opacity-0 pointer-events-none transition-opacity duration-300 ease-in-out"></div>
+
+  <!-- ===== PAGE HERO ===== -->
+  <div class="bg-navy py-14 px-6 relative overflow-hidden">
+    <div class="absolute inset-0 opacity-5">
+      <div class="absolute top-10 -left-10 w-60 h-60 rounded-full border border-white/20"></div>
+      <div class="absolute -bottom-20 right-10 w-80 h-80 rounded-full border border-white/10"></div>
+    </div>
+    <div class="max-w-[1200px] mx-auto relative z-10">
+      <div class="flex items-center gap-2.5 mb-3">
+        <span class="h-[2px] w-8 bg-gold block"></span>
+        <p class="text-[0.78rem] font-bold uppercase tracking-[2px] text-gold">Notre sélection</p>
+      </div>
+      <h1 class="font-serif text-[2.4rem] max-md:text-[1.8rem] font-bold text-white leading-tight mb-3">
+        Biens immobiliers en vente<br><span class="text-gold">à Bangui</span>
+      </h1>
+      <p class="text-white/65 text-[0.95rem] max-w-[580px] mb-6">
+        Terrains, maisons, villas et investissements sélectionnés par Bangui Patrimoine. Chaque bien est vérifié et sécurisé pour un achat en toute confiance depuis la France.
+      </p>
+      <div class="flex flex-wrap items-center gap-6 text-white/50 text-[0.82rem]">
+        <span class="flex items-center gap-1.5"><i class="fa-solid fa-check-circle text-gold"></i> Titres fonciers vérifiés</span>
+        <span class="flex items-center gap-1.5"><i class="fa-solid fa-check-circle text-gold"></i> Visite virtuelle disponible</span>
+        <span class="flex items-center gap-1.5"><i class="fa-solid fa-check-circle text-gold"></i> Accompagnement juridique inclus</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== FILTERS ===== -->
+  <div class="bg-white border-b border-gris-moyen sticky top-[73px] z-40 shadow-sm">
+    <div class="max-w-[1200px] mx-auto px-6 py-4">
+      <div class="flex flex-wrap items-center gap-3">
+
+        <!-- Filtre Type -->
+        <div class="relative">
+          <select id="filterType" class="appearance-none bg-gris border border-gris-moyen rounded text-[0.85rem] px-3.5 py-2 pr-8 font-sans text-[#333] outline-none cursor-pointer hover:border-navy/30 focus:border-gold transition-colors duration-200 min-w-[140px]">
+            <option value="">Tous types</option>
+            <option value="Terrain">Terrains</option>
+            <option value="Maison">Maisons</option>
+            <option value="Villa">Villas</option>
+            <option value="Appartement">Appartements</option>
+            <option value="Immeuble">Immeubles</option>
+          </select>
+          <i class="fa-solid fa-chevron-down text-[0.65rem] text-[#888] absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none"></i>
+        </div>
+
+        <!-- Filtre Quartier -->
+        <div class="relative">
+          <select id="filterQuartier" class="appearance-none bg-gris border border-gris-moyen rounded text-[0.85rem] px-3.5 py-2 pr-8 font-sans text-[#333] outline-none cursor-pointer hover:border-navy/30 focus:border-gold transition-colors duration-200 min-w-[140px]">
+            <option value="">Tous quartiers</option>
+            <option value="KM5">KM5</option>
+            <option value="SICA">SICA</option>
+            <option value="Miskine">Miskine</option>
+            <option value="Centre-ville">Centre-ville</option>
+            <option value="KM10">KM10</option>
+            <option value="Cité Jean XXIII">Cité Jean XXIII</option>
+            <option value="Fatima">Fatima</option>
+            <option value="Boy-Rabe">Boy-Rabe</option>
+            <option value="Combattant">Combattant</option>
+          </select>
+          <i class="fa-solid fa-chevron-down text-[0.65rem] text-[#888] absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none"></i>
+        </div>
+
+        <!-- Filtre Budget -->
+        <div class="relative">
+          <select id="filterBudget" class="appearance-none bg-gris border border-gris-moyen rounded text-[0.85rem] px-3.5 py-2 pr-8 font-sans text-[#333] outline-none cursor-pointer hover:border-navy/30 focus:border-gold transition-colors duration-200 min-w-[140px]">
+            <option value="">Tous budgets</option>
+            <option value="0-40000">Moins de 40 000 €</option>
+            <option value="40000-80000">40 000 € – 80 000 €</option>
+            <option value="80000-150000">80 000 € – 150 000 €</option>
+            <option value="150000-300000">150 000 € – 300 000 €</option>
+            <option value="300000">Plus de 300 000 €</option>
+          </select>
+          <i class="fa-solid fa-chevron-down text-[0.65rem] text-[#888] absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none"></i>
+        </div>
+
+        <!-- Bouton reset -->
+        <button id="clearFiltersBtn" class="text-[0.82rem] text-[#888] hover:text-navy transition-colors duration-200 px-3 py-1.5 flex items-center gap-1.5">
+          <i class="fa-solid fa-rotate-left text-xs"></i> Effacer les filtres
+        </button>
+
+        <!-- Compteur -->
+        <span id="resultCount" class="ml-auto text-[0.82rem] text-[#888] hidden sm:block"></span>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== PROPERTIES GRID ===== -->
+  <div class="max-w-[1200px] mx-auto px-6 py-10 flex-1">
+    <div id="biensGrid" class="grid grid-cols-3 max-xl:grid-cols-2 max-sm:grid-cols-1 gap-6"></div>
+    <div id="emptyState" class="hidden text-center py-20">
+      <div class="w-20 h-20 bg-gris rounded-2xl flex items-center justify-center mx-auto mb-5">
+        <i class="fa-solid fa-search text-[#ccc] text-2xl"></i>
+      </div>
+      <h3 class="font-serif text-[1.3rem] font-bold text-navy mb-2">Aucun bien trouvé</h3>
+      <p class="text-[#888] text-[0.9rem] mb-5 max-w-[400px] mx-auto">Essayez de modifier vos critères de recherche pour voir plus de résultats.</p>
+      <button onclick="resetFilters()" class="bg-navy text-white px-6 py-2.5 rounded font-semibold text-[0.9rem] hover:bg-navy-clair transition-colors duration-200 border-none cursor-pointer">
+        Réinitialiser les filtres
+      </button>
+    </div>
+  </div>
+
+  <!-- ===== DETAIL MODAL ===== -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal-content max-w-[680px] max-h-[90vh] overflow-y-auto">
+      <button class="modal-close" onclick="closeModal()"><i class="fa-solid fa-xmark"></i></button>
+
+      <!-- Carousel léger -->
+      <div class="relative h-[300px] max-md:h-[200px] bg-gris overflow-hidden">
+        <div id="modalCarousel" class="flex transition-transform duration-500 ease-out h-full"></div>
+        <button id="modalPrevBtn" class="absolute left-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white/80 flex items-center justify-center text-navy cursor-pointer border-none hover:bg-white transition-all text-sm shadow-md" onclick="prevModalImage()">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button id="modalNextBtn" class="absolute right-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white/80 flex items-center justify-center text-navy cursor-pointer border-none hover:bg-white transition-all text-sm shadow-md" onclick="nextModalImage()">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+        <div id="modalDots" class="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-1.5"></div>
+        <div id="modalBadge" class="absolute top-3 right-3 px-3 py-1 rounded text-[0.72rem] font-bold"></div>
+      </div>
+
+      <div class="p-7 max-md:p-5">
+        <div class="flex items-start justify-between gap-4 mb-3">
+          <div>
+            <h3 id="modalTitle" class="font-serif text-[1.25rem] font-bold text-navy"></h3>
+            <p id="modalLocation" class="text-[0.85rem] text-[#888] flex items-center gap-1.5 mt-0.5">
+              <i class="fa-solid fa-location-dot text-gold/70"></i>
+            </p>
+          </div>
+          <div class="text-right shrink-0">
+            <div id="modalPrice" class="font-bold text-navy text-[1.2rem]"></div>
+            <div id="modalPriceFCFA" class="text-[0.75rem] text-[#888]"></div>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap gap-4 mb-5 text-[0.85rem] bg-gris p-3.5 rounded-lg" id="modalInfos"></div>
+
+        <p id="modalDesc" class="text-[0.9rem] text-[#555] leading-relaxed mb-5"></p>
+
+        <div id="modalFeatures" class="flex flex-wrap gap-2 mb-6"></div>
+
+        <div class="flex gap-3 pt-4 border-t border-gris-moyen">
+          <button onclick="openContactModal(currentModalId)" class="flex-1 block text-center bg-navy text-white py-3 rounded font-bold text-[0.9rem] cursor-pointer border-none hover:bg-navy-clair transition-colors duration-200">
+            <i class="fa-regular fa-calendar-check mr-2"></i> Demander une visite
+          </button>
+          <a id="modalWhatsAppBtn" href="#" target="_blank" class="flex-1 block text-center bg-[#25D366] text-white py-3 rounded font-bold text-[0.9rem] no-underline hover:bg-[#1ebe5a] transition-colors duration-200">
+            <i class="fa-brands fa-whatsapp mr-2"></i> WhatsApp
+          </a>
+        </div>
+        <p id="modalRef" class="text-[0.72rem] text-[#bbb] text-center mt-3"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== CONTACT MODAL (Visite) ===== -->
+  <div class="modal-overlay" id="contactModalOverlay">
+    <div class="modal-content max-w-[540px]">
+      <button class="modal-close" onclick="closeContactModal()"><i class="fa-solid fa-xmark"></i></button>
+      <div class="p-8 max-md:p-6">
+        <h3 class="font-serif text-[1.25rem] font-bold text-navy mb-1.5"><i class="fa-solid fa-calendar-check text-gold mr-2"></i> Demande de visite</h3>
+        <p id="contactModalProperty" class="text-[0.85rem] text-[#888] mb-6"></p>
+
+        <form id="contactModalForm">
+          <div class="flex flex-wrap gap-3.5 mb-3.5">
+            <input type="text" id="cmName" name="name" placeholder="Prénom et nom" required class="flex-1 min-w-[160px] px-3.5 py-[11px] border border-gris-moyen rounded text-[0.9rem] font-sans text-[#222] outline-none focus:border-gold bg-white transition-colors duration-200">
+            <input type="tel" id="cmPhone" name="phone" placeholder="Téléphone" required class="flex-1 min-w-[160px] px-3.5 py-[11px] border border-gris-moyen rounded text-[0.9rem] font-sans text-[#222] outline-none focus:border-gold bg-white transition-colors duration-200">
+          </div>
+          <input type="email" id="cmEmail" name="email" placeholder="Adresse email" class="w-full px-3.5 py-[11px] border border-gris-moyen rounded text-[0.9rem] font-sans text-[#222] outline-none focus:border-gold bg-white transition-colors duration-200 mb-3.5">
+          <textarea id="cmMessage" name="message" rows="3" required class="w-full px-3.5 py-[11px] border border-gris-moyen rounded text-[0.9rem] font-sans text-[#222] outline-none focus:border-gold bg-white transition-colors duration-200 resize-y min-h-[80px] mb-4" placeholder="Votre message..."></textarea>
+
+          <div class="flex gap-3">
+            <button type="submit" id="cmSubmitBtn" class="flex-1 bg-navy text-white border-none py-3 rounded font-bold text-[0.9rem] cursor-pointer flex items-center justify-center gap-2 hover:bg-navy-clair transition-colors duration-200">
+              <i class="fa-solid fa-paper-plane" id="cmBtnIcon"></i>
+              <span id="cmBtnText">Envoyer la demande</span>
+              <svg id="cmBtnSpinner" class="hidden animate-spin h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+              </svg>
+            </button>
+            <a id="cmWhatsAppBtn" href="#" target="_blank" class="flex-none bg-[#25D366] text-white px-4 py-3 rounded font-bold text-[0.9rem] no-underline hover:bg-[#1ebe5a] transition-colors duration-200 flex items-center justify-center gap-2">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+          <p class="text-[#999] text-[0.75rem] text-center mt-3">Ou contactez-nous directement par WhatsApp</p>
+        </form>
+
+        <!-- Success -->
+        <div id="contactModalSuccess" class="hidden text-center py-6">
+          <div class="w-14 h-14 rounded-full bg-[#10B981]/12 flex items-center justify-center mx-auto mb-4 text-[#10B981] text-[1.5rem]">
+            <i class="fa-solid fa-circle-check"></i>
+          </div>
+          <h4 class="font-serif font-bold text-navy text-[1.1rem] mb-2">Demande envoyée !</h4>
+          <p class="text-[#666] text-[0.88rem] leading-relaxed">Merci pour votre intérêt. Notre équipe vous recontactera sous 24h pour organiser votre visite.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== CTA SECTION ===== -->
+  <div class="bg-white border-t border-gris-moyen py-14 px-6">
+    <div class="max-w-[900px] mx-auto text-center">
+      <div class="text-gold text-[2rem] mb-4"><i class="fa-solid fa-star-of-life"></i></div>
+      <h2 class="font-serif text-[1.8rem] font-bold text-navy mb-4">Vous ne trouvez pas ce que vous cherchez ?</h2>
+      <p class="text-[#666] text-[0.95rem] max-w-[580px] mx-auto mb-7">
+        Notre équipe sélectionne régulièrement de nouveaux biens. Laissez-nous vos critères et nous vous alertons dès qu'un bien correspond à votre recherche.
+      </p>
+      <div class="flex gap-3 justify-center flex-wrap">
+        <a href="index.html#contact" class="bg-navy text-white px-[28px] py-3 rounded font-bold text-[0.95rem] no-underline hover:bg-navy-clair transition-colors duration-200">
+          <i class="fa-regular fa-bell mr-2"></i> Être alerté des nouvelles offres
+        </a>
+        <a href="https://wa.me/33XXXXXXXXX" target="_blank" class="bg-[#25D366] text-white px-[28px] py-3 rounded font-bold text-[0.95rem] no-underline hover:bg-[#1ebe5a] transition-colors duration-200">
+          <i class="fa-brands fa-whatsapp mr-2"></i> Contactez-nous sur WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="bg-navy-fonce text-white/60">
+    <div class="max-w-[1200px] mx-auto px-6 py-14 grid grid-cols-3 max-md:grid-cols-1 gap-10">
+
+      <!-- Brand -->
+      <div>
+        <div class="flex items-center gap-2.5 mb-4">
+          <svg class="w-8 h-8" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7 30 L7 18 L18 10 L29 18 L29 30" stroke="white" stroke-width="1.8" fill="none"/>
+            <path d="M5 19 L18 9 L31 19" stroke="#B8912A" stroke-width="2" fill="none" stroke-linecap="round"/>
+            <rect x="14.5" y="22" width="7" height="8" rx="0.8" fill="none" stroke="white" stroke-width="1.4"/>
+          </svg>
+          <span class="font-serif text-white font-bold text-[1rem]">Bangui Patrimoine</span>
+        </div>
+        <p class="text-white/50 text-[0.87rem] leading-relaxed mb-5 max-w-[260px]">Cabinet franco-centrafricain spécialisé dans la gestion de patrimoine immobilier pour la diaspora centrafricaine.</p>
+        <div class="flex gap-3">
+          <a href="https://www.facebook.com/people/Bangui-Patrimoine/61562111173801/" target="_blank" class="w-8 h-8 rounded bg-white/8 flex items-center justify-center text-white/50 hover:bg-gold hover:text-white transition-all duration-200 text-sm">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com/bangui.patrimoine/" target="_blank" class="w-8 h-8 rounded bg-white/8 flex items-center justify-center text-white/50 hover:bg-gold hover:text-white transition-all duration-200 text-sm">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://www.tiktok.com/@banguipatrimoine" target="_blank" class="w-8 h-8 rounded bg-white/8 flex items-center justify-center text-white/50 hover:bg-gold hover:text-white transition-all duration-200 text-sm">
+            <i class="fa-brands fa-tiktok"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/raynald-rongba-2498a999/" target="_blank" class="w-8 h-8 rounded bg-white/8 flex items-center justify-center text-white/50 hover:bg-gold hover:text-white transition-all duration-200 text-sm">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="https://wa.me/33XXXXXXXXX" target="_blank" class="w-8 h-8 rounded bg-white/8 flex items-center justify-center text-white/50 hover:bg-gold hover:text-white transition-all duration-200 text-sm">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Navigation -->
+      <div>
+        <h4 class="text-[0.78rem] font-bold uppercase tracking-[2px] text-gold mb-5">Navigation</h4>
+        <div class="flex flex-col gap-3">
+          <a href="index.html#services" class="text-white/55 no-underline text-[0.88rem] hover:text-gold transition-colors duration-200">Nos services</a>
+          <a href="index.html#processus" class="text-white/55 no-underline text-[0.88rem] hover:text-gold transition-colors duration-200">Comment ça marche</a>
+          <a href="index.html#apropos" class="text-white/55 no-underline text-[0.88rem] hover:text-gold transition-colors duration-200">À propos</a>
+          <a href="biens-en-vente.html" class="text-white/55 no-underline text-[0.88rem] hover:text-gold transition-colors duration-200">Biens en vente</a>
+          <a href="index.html#contact" class="text-white/55 no-underline text-[0.88rem] hover:text-gold transition-colors duration-200">Contact</a>
+        </div>
+      </div>
+
+      <!-- Contact -->
+      <div>
+        <h4 class="text-[0.78rem] font-bold uppercase tracking-[2px] text-gold mb-5">Contact</h4>
+        <div class="flex flex-col gap-3.5">
+          <div class="flex items-center gap-3 text-white/55 text-[0.87rem]">
+            <i class="fa-solid fa-location-dot text-gold/60 w-4 text-center shrink-0"></i>
+            <span>Basé à Paris — Opérations à Bangui, RCA</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <i class="fa-brands fa-whatsapp text-gold/60 w-4 text-center shrink-0"></i>
+            <a href="https://wa.me/33XXXXXXXXX" class="text-white/55 no-underline text-[0.87rem] hover:text-gold transition-colors">WhatsApp — +33 X XX XX XX XX</a>
+          </div>
+          <div class="flex items-center gap-3">
+            <i class="fa-regular fa-envelope text-gold/60 w-4 text-center shrink-0"></i>
+            <a href="mailto:contact@bangui-patrimoine.fr" class="text-white/55 no-underline text-[0.87rem] hover:text-gold transition-colors">contact@bangui-patrimoine.fr</a>
+          </div>
+          <div class="flex items-center gap-3">
+            <i class="fa-solid fa-globe text-gold/60 w-4 text-center shrink-0"></i>
+            <span class="text-white/55 text-[0.87rem]">bangui-patrimoine.fr</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom -->
+    <div class="border-t border-white/8 px-6 py-5 flex flex-col sm:flex-row items-center justify-between gap-3 max-w-[1200px] mx-auto">
+      <p class="text-white/35 text-[0.8rem]">
+        &copy; 2026 <span class="text-gold/70">Bangui Patrimoine</span> — Cabinet franco-centrafricain en gestion de patrimoine immobilier
+      </p>
+      <a href="#" class="inline-flex items-center gap-1.5 text-white/35 text-[0.8rem] no-underline hover:text-gold transition-colors duration-200">
+        <i class="fa-solid fa-arrow-up"></i> Haut de page
+      </a>
+    </div>
+  </footer>
+
+  <!-- WhatsApp float -->
+  <a href="https://wa.me/33XXXXXXXXX" target="_blank" class="fixed bottom-[22px] right-[22px] bg-[#25D366] text-white w-[54px] h-[54px] rounded-full flex items-center justify-center text-[1.5rem] no-underline shadow-[0_4px_14px_rgba(0,0,0,0.25)] z-50 hover:bg-[#1ebe5a] transition-colors duration-200" aria-label="WhatsApp Bangui Patrimoine">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <script src="script.js"></script>
+  <script>
+    // ===== Load properties from JSON =====
+    var biensData = [];
+    var modalIdx = 0;
+
+    function loadBiensData(callback) {
+      if (biensData.length) {
+        callback(biensData);
+        return;
+      }
+      var xhr = new XMLHttpRequest();
+      xhr.open('GET', '_data/biens.json', true);
+      xhr.onload = function() {
+        if (xhr.status === 200) {
+          try {
+            biensData = JSON.parse(xhr.responseText);
+          } catch(e) {
+            biensData = [];
+          }
+        }
+        callback(biensData);
+      };
+      xhr.onerror = function() { callback([]); };
+      xhr.send();
+    }
+
+    // ===== Render grid =====
+    var grid = document.getElementById('biensGrid');
+    var emptyState = document.getElementById('emptyState');
+    var resultCount = document.getElementById('resultCount');
+
+    function formatPrix(prix) {
+      return new Intl.NumberFormat('fr-FR').format(prix) + ' €';
+    }
+
+    function formatPrixFCFA(prix) {
+      return new Intl.NumberFormat('fr-FR').format(prix) + ' FCFA';
+    }
+
+    function renderBiens(data) {
+      if (!data.length) {
+        grid.innerHTML = '';
+        emptyState.classList.remove('hidden');
+        resultCount.textContent = '';
+        return;
+      }
+      emptyState.classList.add('hidden');
+      resultCount.textContent = data.length + ' bien' + (data.length > 1 ? 's' : '') + ' trouvé' + (data.length > 1 ? 's' : '');
+
+      grid.innerHTML = data.map(function(b) {
+        var badgeBg = b.badgeColor === 'gold' ? 'bg-gold text-navy-fonce' : 'bg-navy text-white';
+        var typeIcon = {
+          'Terrain': '<i class="fa-solid fa-map-location-dot"></i>',
+          'Maison': '<i class="fa-solid fa-house"></i>',
+          'Villa': '<i class="fa-solid fa-chess-rook"></i>',
+          'Appartement': '<i class="fa-solid fa-building"></i>',
+          'Immeuble': '<i class="fa-solid fa-building-columns"></i>'
+        }[b.type] || '<i class="fa-solid fa-home"></i>';
+
+        var infos = '';
+        if (b.surface) {
+          infos += '<span class="flex items-center gap-1.5"><i class="fa-regular fa-compass text-gold/70"></i>' + b.surface + ' m²</span>';
+        }
+        if (b.chambres) {
+          infos += '<span class="flex items-center gap-1.5"><i class="fa-regular fa-bed text-gold/70"></i>' + b.chambres + ' ch.</span>';
+        }
+        if (b.sdb) {
+          infos += '<span class="flex items-center gap-1.5"><i class="fa-regular fa-bath text-gold/70"></i>' + b.sdb + ' sdb</span>';
+        }
+        if (b.pieces && !b.chambres) {
+          infos += '<span class="flex items-center gap-1.5"><i class="fa-regular fa-door-open text-gold/70"></i>' + b.pieces + ' pièces</span>';
+        }
+
+        return '<div class="bg-white rounded-lg overflow-hidden border border-gris-moyen shadow-sm hover:-translate-y-[4px] hover:shadow-[0_12px_28px_rgba(12,35,64,0.1)] hover:border-gold/40 transition-all duration-300 flex flex-col reveal" data-reveal="up" data-reveal-delay="' + (data.indexOf(b) * 60).toString() + '">' +
+          '<div class="relative h-[200px] overflow-hidden bg-gris cursor-pointer" onclick="openModal(' + b.id + ')">' +
+            '<img src="' + b.images[0] + '" alt="' + b.titre + '" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" loading="lazy">' +
+            (b.badge ? '<span class="absolute top-3 left-3 px-2.5 py-0.5 rounded text-[0.7rem] font-bold ' + badgeBg + '">' + b.badge + '</span>' : '') +
+            '<span class="absolute top-3 right-3 px-2.5 py-1 rounded text-[0.7rem] font-bold bg-white/90 text-navy backdrop-blur-sm">' + b.type + '</span>' +
+          '</div>' +
+          '<div class="p-[18px_20px] flex flex-col flex-1">' +
+            '<div class="flex items-start justify-between gap-2 mb-1.5">' +
+              '<h3 class="font-serif text-[1rem] font-bold text-navy leading-tight cursor-pointer hover:text-gold transition-colors duration-200" onclick="openModal(' + b.id + ')">' + b.titre + '</h3>' +
+              '<div class="text-right shrink-0">' +
+                '<div class="font-bold text-navy text-[0.95rem]">' + formatPrix(b.prix) + '</div>' +
+                '<div class="text-[0.65rem] text-[#999]">' + formatPrixFCFA(b.prix_fcfa) + '</div>' +
+              '</div>' +
+            '</div>' +
+            '<p class="text-[0.8rem] text-[#888] flex items-center gap-1.5 mb-3">' +
+              '<i class="fa-solid fa-location-dot text-gold/70 text-[0.7rem]"></i>' + b.quartier + ', Bangui' +
+            '</p>' +
+            '<p class="text-[0.82rem] text-[#666] leading-relaxed mb-4 line-clamp-2">' + b.description + '</p>' +
+            '<div class="flex flex-wrap gap-x-4 gap-y-1.5 text-[0.78rem] text-[#555] mb-4 py-3 border-t border-gris-moyen">' +
+              infos +
+            '</div>' +
+            '<div class="flex gap-2 mt-auto">' +
+              '<button onclick="openModal(' + b.id + ')" class="flex-1 bg-navy text-white py-2.5 font-semibold text-[0.82rem] rounded cursor-pointer border-none hover:bg-navy-clair transition-colors duration-200 flex items-center justify-center gap-1.5"><i class="fa-solid fa-eye"></i> Détails</button>' +
+              '<button onclick="openContactModal(' + b.id + ')" class="flex-1 block text-center border border-gris-moyen text-navy py-2.5 font-semibold text-[0.82rem] rounded cursor-pointer hover:border-navy hover:bg-navy/5 transition-all duration-200 flex items-center justify-center gap-1.5"><i class="fa-regular fa-calendar-check"></i> Visite</button>' +
+            '</div>' +
+          '</div>' +
+        '</div>';
+      }).join('');
+
+      // Observe reveal elements
+      if (window.observeReveal) {
+        window.observeReveal(grid.querySelectorAll('.reveal'));
+      } else {
+        grid.querySelectorAll('.reveal').forEach(function(el) { el.classList.add('active'); });
+      }
+    }
+
+    // ===== Filtering =====
+    function getFilteredBiens() {
+      var type = document.getElementById('filterType').value;
+      var quartier = document.getElementById('filterQuartier').value;
+      var budget = document.getElementById('filterBudget').value;
+
+      return biensData.filter(function(b) {
+        if (type && b.type !== type) return false;
+        if (quartier && b.quartier !== quartier) return false;
+        if (budget) {
+          if (budget === '300000' && b.prix < 300000) return false;
+          if (budget === '0-40000' && (b.prix < 0 || b.prix > 40000)) return false;
+          if (budget === '40000-80000' && (b.prix < 40000 || b.prix > 80000)) return false;
+          if (budget === '80000-150000' && (b.prix < 80000 || b.prix > 150000)) return false;
+          if (budget === '150000-300000' && (b.prix < 150000 || b.prix > 300000)) return false;
+        }
+        return true;
+      });
+    }
+
+    function applyFilters() {
+      var filtered = getFilteredBiens();
+      renderBiens(filtered);
+    }
+
+    window.resetFilters = function() {
+      document.getElementById('filterType').value = '';
+      document.getElementById('filterQuartier').value = '';
+      document.getElementById('filterBudget').value = '';
+      applyFilters();
+    };
+
+    document.getElementById('filterType').addEventListener('change', applyFilters);
+    document.getElementById('filterQuartier').addEventListener('change', applyFilters);
+    document.getElementById('filterBudget').addEventListener('change', applyFilters);
+    document.getElementById('clearFiltersBtn').addEventListener('click', resetFilters);
+
+    // ===== Modal =====
+    var currentModalImages = [];
+    var currentModalIdx = 0;
+    var currentModalId = null;
+
+    window.openModal = function(id) {
+      var bien = biensData.find(function(b) { return b.id === id; });
+      if (!bien) return;
+      currentModalId = id;
+
+      document.getElementById('modalTitle').textContent = bien.titre;
+      document.getElementById('modalLocation').innerHTML = '<i class="fa-solid fa-location-dot text-gold/70"></i> ' + bien.localisation;
+      document.getElementById('modalPrice').textContent = formatPrix(bien.prix);
+      document.getElementById('modalPriceFCFA').textContent = formatPrixFCFA(bien.prix_fcfa);
+      document.getElementById('modalDesc').textContent = bien.description;
+      document.getElementById('modalRef').textContent = 'Réf. ' + bien.reference;
+
+      // Badge
+      var badge = document.getElementById('modalBadge');
+      if (bien.badge) {
+        badge.textContent = bien.badge;
+        badge.className = 'absolute top-3 right-3 px-3 py-1 rounded text-[0.72rem] font-bold ' +
+          (bien.badgeColor === 'gold' ? 'bg-gold text-navy-fonce' : 'bg-navy text-white');
+      } else {
+        badge.style.display = 'none';
+      }
+
+      // Infos
+      var infosHtml = '';
+      if (bien.type) infosHtml += '<div class="flex items-center gap-1.5"><span class="font-semibold text-navy">Type :</span> ' + bien.type + '</div>';
+      if (bien.surface) infosHtml += '<div class="flex items-center gap-1.5"><span class="font-semibold text-navy">Surface :</span> ' + bien.surface + ' m²</div>';
+      if (bien.chambres) infosHtml += '<div class="flex items-center gap-1.5"><span class="font-semibold text-navy">Chambres :</span> ' + bien.chambres + '</div>';
+      if (bien.sdb) infosHtml += '<div class="flex items-center gap-1.5"><span class="font-semibold text-navy">Salles d\'eau :</span> ' + bien.sdb + '</div>';
+      if (bien.pieces) infosHtml += '<div class="flex items-center gap-1.5"><span class="font-semibold text-navy">Pièces :</span> ' + bien.pieces + '</div>';
+      document.getElementById('modalInfos').innerHTML = infosHtml;
+
+      // Features
+      document.getElementById('modalFeatures').innerHTML = bien.caracteristiques.map(function(f) {
+        return '<span class="px-2.5 py-1 bg-gris rounded text-[0.78rem] text-[#555] flex items-center gap-1.5"><i class="fa-solid fa-check text-gold text-[0.7rem]"></i>' + f + '</span>';
+      }).join('');
+
+      // WhatsApp
+      var msg = 'Bonjour, je suis intéressé(e) par le bien "' + bien.titre + '" (Réf. ' + bien.reference + '). Pouvez-vous me donner plus d\'informations ?';
+      document.getElementById('modalWhatsAppBtn').href = 'https://wa.me/33XXXXXXXXX?text=' + encodeURIComponent(msg);
+
+      // Carousel
+      currentModalImages = bien.images;
+      currentModalIdx = 0;
+      renderModalCarousel();
+
+      // Show
+      document.getElementById('modalOverlay').classList.add('show');
+      document.body.style.overflow = 'hidden';
+    };
+
+    window.closeModal = function() {
+      document.getElementById('modalOverlay').classList.remove('show');
+      document.body.style.overflow = '';
+    };
+
+    function renderModalCarousel() {
+      var carousel = document.getElementById('modalCarousel');
+      var dots = document.getElementById('modalDots');
+      carousel.innerHTML = currentModalImages.map(function(img) {
+        return '<div class="min-w-full h-full"><img src="' + img + '" class="w-full h-full object-cover"></div>';
+      }).join('');
+      dots.innerHTML = currentModalImages.map(function(_, i) {
+        return '<div class="w-2 h-2 rounded-full ' + (i === currentModalIdx ? 'bg-white' : 'bg-white/40') + ' cursor-pointer" onclick="goModalImage(' + i + ')"></div>';
+      }).join('');
+      carousel.style.transform = 'translateX(-' + (currentModalIdx * 100) + '%)';
+    }
+
+    window.nextModalImage = function() {
+      if (currentModalIdx < currentModalImages.length - 1) {
+        currentModalIdx++;
+        renderModalCarousel();
+      }
+    };
+
+    window.prevModalImage = function() {
+      if (currentModalIdx > 0) {
+        currentModalIdx--;
+        renderModalCarousel();
+      }
+    };
+
+    window.goModalImage = function(n) {
+      currentModalIdx = n;
+      renderModalCarousel();
+    };
+
+    // Close modal on overlay click
+    document.getElementById('modalOverlay').addEventListener('click', function(e) {
+      if (e.target === this) closeModal();
+    });
+
+    // ===== Contact Modal =====
+    window.openContactModal = function(id) {
+      var bien = biensData.find(function(b) { return b.id === id; });
+      if (!bien) return;
+
+      // Reset form state
+      document.getElementById('contactModalForm').classList.remove('hidden');
+      document.getElementById('contactModalSuccess').classList.add('hidden');
+      var resetBtn = document.getElementById('cmSubmitBtn');
+      resetBtn.disabled = false;
+      document.getElementById('cmBtnIcon').classList.remove('hidden');
+      document.getElementById('cmBtnText').textContent = 'Envoyer la demande';
+      document.getElementById('cmBtnSpinner').classList.add('hidden');
+
+      document.getElementById('contactModalProperty').textContent = bien.titre + ' — ' + bien.quartier + ', Bangui (Réf. ' + bien.reference + ')';
+      document.getElementById('cmMessage').value = 'Bonjour, je souhaite visiter le bien : ' + bien.titre + ' (' + bien.reference + '). Merci de me contacter pour organiser une visite.';
+
+      var msg = 'Bonjour, je suis intéressé(e) par le bien "' + bien.titre + '" (Réf. ' + bien.reference + '). Souhaitez-vous organiser une visite ?';
+      document.getElementById('cmWhatsAppBtn').href = 'https://wa.me/33XXXXXXXXX?text=' + encodeURIComponent(msg);
+
+      document.getElementById('contactModalOverlay').classList.add('show');
+      document.body.style.overflow = 'hidden';
+    };
+
+    window.closeContactModal = function() {
+      document.getElementById('contactModalOverlay').classList.remove('show');
+      document.body.style.overflow = '';
+    };
+
+    // Form submission
+    document.getElementById('contactModalForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      var name = document.getElementById('cmName').value.trim();
+      var phone = document.getElementById('cmPhone').value.trim();
+      var email = document.getElementById('cmEmail').value.trim();
+      var message = document.getElementById('cmMessage').value.trim();
+
+      if (!name || !phone) return;
+
+      var btn = document.getElementById('cmSubmitBtn');
+      var icon = document.getElementById('cmBtnIcon');
+      var text = document.getElementById('cmBtnText');
+      var spinner = document.getElementById('cmBtnSpinner');
+      var whatsapp = document.getElementById('cmWhatsAppBtn');
+
+      btn.disabled = true;
+      icon.classList.add('hidden');
+      text.textContent = 'Envoi en cours…';
+      spinner.classList.remove('hidden');
+
+      // Simulation d'envoi
+      setTimeout(function() {
+        document.getElementById('contactModalForm').classList.add('hidden');
+        document.getElementById('contactModalSuccess').classList.remove('hidden');
+
+        // Réinitialisation pour la prochaine ouverture
+        setTimeout(function() {
+          document.getElementById('contactModalForm').classList.remove('hidden');
+          document.getElementById('contactModalSuccess').classList.add('hidden');
+          btn.disabled = false;
+          icon.classList.remove('hidden');
+          text.textContent = 'Envoyer la demande';
+          spinner.classList.add('hidden');
+          document.getElementById('cmName').value = '';
+          document.getElementById('cmPhone').value = '';
+          document.getElementById('cmEmail').value = '';
+        }, 3000);
+      }, 1200);
+    });
+
+    // Close contact modal on overlay click
+    document.getElementById('contactModalOverlay').addEventListener('click', function(e) {
+      if (e.target === this) closeContactModal();
+    });
+
+    // Close on Escape
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        closeModal();
+        closeContactModal();
+      }
+    });
+
+    // ===== Init =====
+    loadBiensData(function(data) {
+      biensData = data;
+      renderBiens(data);
+    });
+  </script>
+</body>
+</html>

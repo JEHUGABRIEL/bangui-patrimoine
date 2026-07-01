@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://bangui-patrimoine.fr/sitemap.xml

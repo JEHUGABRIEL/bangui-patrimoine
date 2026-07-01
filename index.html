@@ -1,0 +1,1300 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bangui Patrimoine — Cabinet franco-centrafricain en gestion de patrimoine immobilier</title>
+  <meta name="description" content="Bangui Patrimoine : cabinet franco-centrafricain spécialisé dans l'accompagnement de la diaspora pour ses projets immobiliers à Bangui. Acquisition de terrain, construction clé en main, gestion de patrimoine.">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://bangui-patrimoine.fr/">
+  <meta property="og:title" content="Bangui Patrimoine — Cabinet franco-centrafricain en gestion de patrimoine immobilier">
+  <meta property="og:description" content="Vous avez la double culture ? Un pied en France, la tête à Bangui. Construisez votre patrimoine en RCA depuis la France, en toute sérénité.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200&q=80">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="Bangui Patrimoine">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Bangui Patrimoine — Cabinet franco-centrafricain">
+  <meta name="twitter:description" content="Construisez votre patrimoine immobilier à Bangui depuis la France.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200&q=80">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="apple-touch-icon" href="favicon.svg">
+
+  <!-- View Transitions API -->
+  <meta name="view-transition" content="same-origin">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy:  { DEFAULT: '#0C2340', fonce: '#061628', clair: '#163660' },
+            gold:  { DEFAULT: '#B8912A', clair: '#D4AE55', pale: '#F0DFA0' },
+            terre: { DEFAULT: '#6B3A2A' },
+            gris:  { DEFAULT: '#F6F4F0', moyen: '#E4E0D8' },
+          },
+          fontFamily: {
+            sans:    ['Poppins', 'system-ui', 'sans-serif'],
+            serif:   ['Cormorant Garamond', 'Georgia', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- View Transition direction -->
+  <script>
+  !function(){
+    var d=sessionStorage.getItem('vtDir');
+    sessionStorage.removeItem('vtDir');
+    if(!d) return;
+    var s=document.createElement('style');
+    if(d==='f'){
+      s.textContent='::view-transition-old(root){animation:vt-out-left .35s cubic-bezier(.34,1.56,.64,1) both}::view-transition-new(root){animation:vt-in-right .35s cubic-bezier(.34,1.56,.64,1) both}';
+    }else{
+      s.textContent='::view-transition-old(root){animation:vt-out-right .35s cubic-bezier(.34,1.56,.64,1) both}::view-transition-new(root){animation:vt-in-left .35s cubic-bezier(.34,1.56,.64,1) both}';
+    }
+    document.head.appendChild(s);
+  }();
+  </script>
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FinancialService","name":"Bangui Patrimoine","description":"Cabinet franco-centrafricain spécialisé dans l'accompagnement de la diaspora pour ses projets immobiliers et patrimoniaux à Bangui","url":"https://bangui-patrimoine.fr","address":{"@type":"PostalAddress","addressLocality":"Paris","addressCountry":"FR"},"areaServed":"République Centrafricaine"}
+  </script>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-sans text-[#222] bg-white leading-relaxed">
+
+  <!-- ===== PAGE LOADER ===== -->
+  <div id="pageLoader">
+    <div>
+      <div class="spinner"></div>
+      <p>Chargement...</p>
+    </div>
+  </div>
+
+  <!-- ===== TOPBAR (Paris + Bangui) ===== -->
+  <div class="bg-navy-fonce text-white/60 text-[0.76rem] py-2 px-6 hidden md:block">
+    <div class="max-w-[1200px] mx-auto flex items-center justify-between">
+      <div class="flex items-center gap-6">
+        <span class="flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-gold/70"></i> Cabinet basé à Paris &mdash; Opérations à Bangui, RCA</span>
+        <span class="flex items-center gap-1.5"><i class="fa-regular fa-clock text-gold/70"></i> Consultations du lun. au ven. 9h–19h (heure de Paris)</span>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="https://www.facebook.com/people/Bangui-Patrimoine/61562111173801/" target="_blank" class="flex items-center gap-1.5 hover:text-gold transition-colors duration-200"><i class="fa-brands fa-facebook-f text-gold/70"></i> Facebook</a>
+        <a href="https://www.instagram.com/bangui.patrimoine/" target="_blank" class="flex items-center gap-1.5 hover:text-gold transition-colors duration-200"><i class="fa-brands fa-instagram text-gold/70"></i> Instagram</a>
+        <a href="https://www.tiktok.com/@banguipatrimoine" target="_blank" class="flex items-center gap-1.5 hover:text-gold transition-colors duration-200"><i class="fa-brands fa-tiktok text-gold/70"></i> TikTok</a>
+        <a href="https://wa.me/33XXXXXXXXX" class="flex items-center gap-1.5 hover:text-gold transition-colors duration-200"><i class="fa-brands fa-whatsapp text-gold/70"></i> WhatsApp</a>
+        <a href="mailto:contact@bangui-patrimoine.fr" class="flex items-center gap-1.5 hover:text-gold transition-colors duration-200"><i class="fa-regular fa-envelope text-gold/70"></i> contact@bangui-patrimoine.fr</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== HEADER ===== -->
+  <header class="sticky top-0 z-50 bg-white border-b border-gris-moyen shadow-[0_2px_12px_rgba(12,35,64,0.07)]">
+    <div class="max-w-[1200px] mx-auto flex items-center justify-between px-6 py-3.5 relative">
+      <a href="#" class="flex items-center gap-3 no-underline">
+        <!-- Logo SVG -->
+        <svg class="w-[44px] h-[44px] shrink-0" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="4" y="30" width="36" height="3" rx="1.5" fill="#0C2340"/>
+          <!-- Maison principale -->
+          <path d="M7 30 L7 18 L18 10 L29 18 L29 30" stroke="#0C2340" stroke-width="1.8" fill="none" stroke-linejoin="round"/>
+          <!-- Toit accent or -->
+          <path d="M5 19 L18 9 L31 19" stroke="#B8912A" stroke-width="2" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+          <!-- Porte -->
+          <rect x="14.5" y="22" width="7" height="8" rx="0.8" fill="none" stroke="#0C2340" stroke-width="1.5"/>
+          <!-- Fenêtre droite -->
+          <rect x="23" y="20" width="4.5" height="4" rx="0.5" fill="none" stroke="#B8912A" stroke-width="1.3"/>
+        </svg>
+        <div class="leading-tight">
+          <strong class="block font-serif text-[1.15rem] font-bold text-navy tracking-[0.5px]">Bangui Patrimoine</strong>
+          <span class="text-[0.65rem] text-gold tracking-[2.5px] uppercase font-semibold font-sans">Paris &bull; Bangui</span>
+        </div>
+      </a>
+
+      <button id="menuToggle" class="hidden max-md:block bg-transparent border-none text-navy text-[1.4rem] cursor-pointer">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <nav id="navMenu" class="flex gap-7 text-sm max-md:absolute max-md:top-full max-md:right-0 max-md:w-3/4 max-md:bg-white max-md:flex-col max-md:p-6 max-md:pt-16 max-md:gap-4 max-md:opacity-0 max-md:pointer-events-none max-md:translate-y-[-10px] max-md:transition-all max-md:duration-300 max-md:ease-out max-md:border-t max-md:border-gris-moyen max-md:shadow-[0_8px_20px_rgba(12,35,64,0.08)]">
+        <a href="#" style="--stagger:1" class="text-[#333] no-underline font-medium hover:text-navy transition-colors duration-200">Accueil</a>
+        <a href="biens-en-vente.html" style="--stagger:2" class="text-[#333] no-underline font-medium hover:text-navy transition-colors duration-200">Toutes les offres</a>
+        <a href="#pourquoi-investir" style="--stagger:3" class="text-[#333] no-underline font-medium hover:text-navy transition-colors duration-200">Investir à Bangui</a>
+        <a href="#apropos" style="--stagger:4" class="text-[#333] no-underline font-medium hover:text-navy transition-colors duration-200">À propos</a>
+        <a href="#contact" style="--stagger:5" class="bg-navy text-white no-underline text-center px-5 py-2.5 rounded font-semibold hover:bg-navy-clair transition-colors duration-200 max-md:block">Consultation gratuite</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Overlay -->
+  <div id="menuOverlay" class="fixed inset-0 bg-black/40 z-40 opacity-0 pointer-events-none transition-opacity duration-300 ease-in-out"></div>
+
+  <!-- ===== HERO CAROUSEL ===== -->
+  <div id="heroCarousel" class="relative h-[620px] max-md:h-[500px] overflow-hidden">
+    <div class="hero-slide active" style="background-image:url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1400&q=80');"></div>
+    <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=1400&q=80');"></div>
+    <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?w=1400&q=80');"></div>
+
+    <div class="absolute inset-0 flex flex-col justify-center items-start text-left px-8 max-w-[820px] mx-auto z-10 w-full left-0 right-0">
+      <div class="inline-flex items-center gap-2 bg-gold text-white text-[0.75rem] font-bold tracking-[2px] uppercase px-3.5 py-1.5 rounded-sm mb-5 hero-reveal">
+        <i class="fa-solid fa-landmark"></i> Cabinet franco-centrafricain
+      </div>
+      <h1 id="heroTitle" class="font-serif text-[2.8rem] max-md:text-[2rem] font-bold text-white leading-tight mb-4 hero-reveal">
+        Un pied en France,<br>votre maison à Bangui
+      </h1>
+      <p id="heroSub" class="text-[1.05rem] text-white/80 mb-8 max-w-[520px] hero-reveal">
+        Bangui Patrimoine accompagne la diaspora centrafricaine dans l'acquisition de terrain, la construction et la gestion de patrimoine immobilier en RCA — depuis la France, en toute sérénité.
+      </p>
+      <div class="flex gap-3.5 flex-wrap hero-reveal">
+        <a href="#contact" class="bg-gold text-white px-[26px] py-3 rounded font-bold text-[0.95rem] no-underline hover:bg-gold-clair transition-colors duration-200">Consultation gratuite</a>
+        <a href="#services" class="bg-transparent text-white border border-white/60 px-[26px] py-3 rounded font-semibold text-[0.95rem] no-underline hover:bg-white/10 transition-all duration-200">Nos services</a>
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <!-- ===== SERVICES ===== -->
+  <div class="max-w-[1200px] mx-auto px-6 py-[80px]" id="services">
+    <div class="flex items-center gap-2.5 mb-2 reveal" data-reveal="up">
+      <span class="h-[2px] w-8 bg-gold block"></span>
+      <p class="text-[0.78rem] font-bold uppercase tracking-[2px] text-gold">Nos expertises</p>
+    </div>
+    <h2 class="font-serif text-[2.1rem] font-bold text-navy mb-2.5 reveal" data-reveal="up" data-reveal-delay="100">Un accompagnement sur-mesure,<br>de Paris jusqu'aux clés à Bangui</h2>
+    <p class="text-[#666] text-base max-w-[580px] reveal" data-reveal="up" data-reveal-delay="200">Parce que la distance ne doit pas être un obstacle à l'investissement, nous gérons chaque étape de votre projet à votre place.</p>
+
+    <div class="grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-5 mt-10">
+
+      <!-- Service 1 -->
+      <div class="group border border-gris-moyen rounded-lg p-8 cursor-default hover:-translate-y-[5px] hover:shadow-[0_12px_28px_rgba(12,35,64,0.09)] hover:border-gold/50 transition-all duration-250 reveal" data-reveal="up" data-reveal-delay="100">
+        <div class="w-14 h-14 rounded-xl bg-gris flex items-center justify-center mb-5 text-[1.35rem] text-navy group-hover:bg-navy group-hover:text-gold transition-all duration-200">
+          <i class="fa-solid fa-chart-line"></i>
+        </div>
+        <h3 class="font-serif text-[1.05rem] font-bold text-navy mb-2">Conseil en investissement</h3>
+        <p class="text-[0.88rem] text-[#666] leading-relaxed">Analyse de votre situation, identification des meilleures opportunités et définition d'une stratégie patrimoniale adaptée à votre budget et vos objectifs.</p>
+      </div>
+
+      <!-- Service 2 -->
+      <div class="group border border-gris-moyen rounded-lg p-8 cursor-default hover:-translate-y-[5px] hover:shadow-[0_12px_28px_rgba(12,35,64,0.09)] hover:border-gold/50 transition-all duration-250 reveal" data-reveal="up" data-reveal-delay="200">
+        <div class="w-14 h-14 rounded-xl bg-gris flex items-center justify-center mb-5 text-[1.35rem] text-navy group-hover:bg-navy group-hover:text-gold transition-all duration-200">
+          <i class="fa-solid fa-map-location-dot"></i>
+        </div>
+        <h3 class="font-serif text-[1.05rem] font-bold text-navy mb-2">Acquisition de terrain</h3>
+        <p class="text-[0.88rem] text-[#666] leading-relaxed">Recherche, vérification des titres fonciers, sécurisation juridique et achat de votre terrain à Bangui — sans que vous ayez à vous déplacer.</p>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="group border border-gris-moyen rounded-lg p-8 cursor-default hover:-translate-y-[5px] hover:shadow-[0_12px_28px_rgba(12,35,64,0.09)] hover:border-gold/50 transition-all duration-250 reveal" data-reveal="up" data-reveal-delay="300">
+        <div class="w-14 h-14 rounded-xl bg-gris flex items-center justify-center mb-5 text-[1.35rem] text-navy group-hover:bg-navy group-hover:text-gold transition-all duration-200">
+          <i class="fa-solid fa-helmet-safety"></i>
+        </div>
+        <h3 class="font-serif text-[1.05rem] font-bold text-navy mb-2">Construction clé en main</h3>
+        <p class="text-[0.88rem] text-[#666] leading-relaxed">Maîtrise d'ouvrage déléguée, suivi rigoureux du chantier et rapports réguliers. Votre maison se construit pendant que vous vivez votre vie en France.</p>
+      </div>
+
+      <!-- Service 4 -->
+      <div class="group border border-gris-moyen rounded-lg p-8 cursor-default hover:-translate-y-[5px] hover:shadow-[0_12px_28px_rgba(12,35,64,0.09)] hover:border-gold/50 transition-all duration-250 reveal" data-reveal="up" data-reveal-delay="400">
+        <div class="w-14 h-14 rounded-xl bg-gris flex items-center justify-center mb-5 text-[1.35rem] text-navy group-hover:bg-navy group-hover:text-gold transition-all duration-200">
+          <i class="fa-solid fa-building-columns"></i>
+        </div>
+        <h3 class="font-serif text-[1.05rem] font-bold text-navy mb-2">Gestion de patrimoine</h3>
+        <p class="text-[0.88rem] text-[#666] leading-relaxed">Optimisation de la rentabilité de vos biens en RCA, gestion locative et reporting financier régulier pour les propriétaires basés à l'étranger.</p>
+      </div>
+
+      <!-- Service 5 -->
+      <div class="group border border-gris-moyen rounded-lg p-8 cursor-default hover:-translate-y-[5px] hover:shadow-[0_12px_28px_rgba(12,35,64,0.09)] hover:border-gold/50 transition-all duration-250 reveal" data-reveal="up" data-reveal-delay="500">
+        <div class="w-14 h-14 rounded-xl bg-gris flex items-center justify-center mb-5 text-[1.35rem] text-navy group-hover:bg-navy group-hover:text-gold transition-all duration-200">
+          <i class="fa-solid fa-scroll"></i>
+        </div>
+        <h3 class="font-serif text-[1.05rem] font-bold text-navy mb-2">Planification successorale</h3>
+        <p class="text-[0.88rem] text-[#666] leading-relaxed">Protection et transmission de votre patrimoine immobilier centrafricain. Nous vous aidons à structurer votre héritage pour les générations futures.</p>
+      </div>
+
+      <!-- CTA Card -->
+      <div class="border border-gold/40 bg-navy rounded-lg p-8 flex flex-col justify-between reveal" data-reveal="up" data-reveal-delay="600">
+        <div>
+          <div class="text-gold font-serif text-[1.05rem] font-bold mb-3">Vous avez un projet ?</div>
+          <p class="text-white/70 text-[0.88rem] leading-relaxed mb-6">Discutons de vos objectifs lors d'une consultation initiale offerte. Sans engagement, en français, depuis où vous êtes.</p>
+        </div>
+        <a href="#contact" class="bg-gold text-white text-center py-3 px-5 rounded font-bold text-[0.88rem] no-underline hover:bg-gold-clair transition-colors duration-200">
+          Prendre rendez-vous <i class="fa-solid fa-arrow-right ml-1"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== BIENS EN VEDETTE ===== -->
+  <div class="max-w-[1200px] mx-auto px-6 py-[80px]" id="vedettes">
+    <div class="text-center mb-10">
+      <div class="flex items-center justify-center gap-2.5 mb-2 reveal" data-reveal="up">
+        <span class="h-[2px] w-8 bg-gold block"></span>
+        <p class="text-[0.78rem] font-bold uppercase tracking-[2px] text-gold">Notre sélection</p>
+        <span class="h-[2px] w-8 bg-gold block"></span>
+      </div>
+      <h2 class="font-serif text-[2rem] font-bold text-navy mb-2.5 reveal" data-reveal="up" data-reveal-delay="100">Biens en vedette</h2>
+      <p class="text-[#666] text-base max-w-[520px] mx-auto reveal" data-reveal="up" data-reveal-delay="200">Une sélection de propriétés disponibles à Bangui dès maintenant</p>
+    </div>
+
+    <div class="grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-6 mt-6" id="vedettesGrid">
+      <!-- Squelettes de chargement -->
+      <div class="skeleton-vedette rounded-lg overflow-hidden border border-gris-moyen bg-white reveal" data-reveal="up" data-reveal-delay="100">
+        <div class="bg-gris h-[200px] skeleton-pulse"></div>
+        <div class="p-[18px_20px]">
+          <div class="bg-gris h-5 w-3/4 rounded mb-3 skeleton-pulse"></div>
+          <div class="bg-gris h-4 w-1/2 rounded mb-3 skeleton-pulse"></div>
+          <div class="bg-gris h-3 w-2/3 rounded mb-4 skeleton-pulse"></div>
+          <div class="bg-gris h-3 w-full rounded mb-1 skeleton-pulse"></div>
+          <div class="bg-gris h-3 w-4/5 rounded mb-4 skeleton-pulse"></div>
+          <div class="flex gap-2 pt-3 border-t border-gris-moyen">
+            <div class="bg-gris h-[38px] flex-1 rounded skeleton-pulse"></div>
+            <div class="bg-gris h-[38px] flex-1 rounded skeleton-pulse"></div>
+          </div>
+        </div>
+      </div>
+      <div class="skeleton-vedette rounded-lg overflow-hidden border border-gris-moyen bg-white reveal" data-reveal="up" data-reveal-delay="200">
+        <div class="bg-gris h-[200px] skeleton-pulse"></div>
+        <div class="p-[18px_20px]">
+          <div class="bg-gris h-5 w-2/3 rounded mb-3 skeleton-pulse"></div>
+          <div class="bg-gris h-4 w-2/5 rounded mb-3 skeleton-pulse"></div>
+          <div class="bg-gris h-3 w-3/5 rounded mb-4 skeleton-pulse"></div>
+          <div class="bg-gris h-3 w-full rounded mb-1 skeleton-pulse"></div>
+          <div class="bg-gris h-3 w-3/4 rounded mb-4 skeleton-pulse"></div>
+          <div class="flex gap-2 pt-3 border-t border-gris-moyen">
+            <div class="bg-gris h-[38px] flex-1 rounded skeleton-pulse"></div>
+            <div class="bg-gris h-[38px] flex-1 rounded skeleton-pulse"></div>
+          </div>
+        </div>
+      </div>
+      <div class="skeleton-vedette rounded-lg overflow-hidden border border-gris-moyen bg-white reveal" data-reveal="up" data-reveal-delay="300">
+        <div class="bg-gris h-[200px] skeleton-pulse"></div>
+        <div class="p-[18px_20px]">
+          <div class="bg-gris h-5 w-3/5 rounded mb-3 skeleton-pulse"></div>
+          <div class="bg-gris h-4 w-3/4 rounded mb-3 skeleton-pulse"></div>
+          <div class="bg-gris h-3 w-1/2 rounded mb-4 skeleton-pulse"></div>
+          <div class="bg-gris h-3 w-full rounded mb-1 skeleton-pulse"></div>
+          <div class="bg-gris h-3 w-2/3 rounded mb-4 skeleton-pulse"></div>
+          <div class="flex gap-2 pt-3 border-t border-gris-moyen">
+            <div class="bg-gris h-[38px] flex-1 rounded skeleton-pulse"></div>
+            <div class="bg-gris h-[38px] flex-1 rounded skeleton-pulse"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-10 reveal" data-reveal="up" data-reveal-delay="300">
+      <a href="biens-en-vente.html" class="inline-flex items-center gap-2 bg-navy text-white px-6 py-3 rounded font-semibold text-[0.9rem] no-underline hover:bg-navy-clair transition-colors duration-200">
+        Voir tous les biens <i class="fa-solid fa-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- ===== POURQUOI INVESTIR À BANGUI ===== -->
+  <div class="bg-gris py-[80px] px-6" id="pourquoi-investir">
+    <div class="max-w-[1100px] mx-auto">
+      <div class="text-center mb-14">
+        <div class="flex items-center justify-center gap-2.5 mb-2 reveal" data-reveal="up">
+          <span class="h-[2px] w-8 bg-gold block"></span>
+          <p class="text-[0.78rem] font-bold uppercase tracking-[2px] text-gold">Le marché immobilier centrafricain</p>
+          <span class="h-[2px] w-8 bg-gold block"></span>
+        </div>
+        <h2 class="font-serif text-[2.1rem] font-bold text-navy mb-2.5 reveal" data-reveal="up" data-reveal-delay="100">Pourquoi investir à Bangui ?</h2>
+        <p class="text-[#666] text-base max-w-[580px] mx-auto reveal" data-reveal="up" data-reveal-delay="200">Capitale d'un pays en pleine reconstruction, Bangui offre des opportunités immobilières uniques pour la diaspora centrafricaine.</p>
+      </div>
+
+      <div class="grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-5">
+
+        <div class="group bg-white border border-gris-moyen rounded-lg p-7 cursor-default hover:-translate-y-[4px] hover:shadow-[0_12px_28px_rgba(12,35,64,0.09)] hover:border-gold/40 transition-all duration-300 reveal" data-reveal="up" data-reveal-delay="100">
+          <div class="w-12 h-12 rounded-xl bg-gris flex items-center justify-center mb-4 text-[1.2rem] text-gold group-hover:bg-navy group-hover:text-white transition-all duration-200">
+            <i class="fa-solid fa-chart-line"></i>
+          </div>
+          <h3 class="font-serif text-[1rem] font-bold text-navy mb-2">Marché en pleine croissance</h3>
+          <p class="text-[0.85rem] text-[#666] leading-relaxed">Le prix du foncier à Bangui a connu une hausse significative ces dernières années. Investir aujourd'hui, c'est construire un patrimoine qui prendra de la valeur dans un pays en plein développement économique.</p>
+        </div>
+
+        <div class="group bg-white border border-gris-moyen rounded-lg p-7 cursor-default hover:-translate-y-[4px] hover:shadow-[0_12px_28px_rgba(12,35,64,0.09)] hover:border-gold/40 transition-all duration-300 reveal" data-reveal="up" data-reveal-delay="200">
+          <div class="w-12 h-12 rounded-xl bg-gris flex items-center justify-center mb-4 text-[1.2rem] text-gold group-hover:bg-navy group-hover:text-white transition-all duration-200">
+            <i class="fa-solid fa-hand-holding-dollar"></i>
+          </div>
+          <h3 class="font-serif text-[1rem] font-bold text-navy mb-2">Rentabilité locative attractive</h3>
+          <p class="text-[0.85rem] text-[#666] leading-relaxed">Avec une demande locative forte et une offre de qualité encore limitée, les rendements locatifs à Bangui sont parmi les plus attractifs d'Afrique centrale, notamment auprès des expatriés et des organisations internationales.</p>
+        </div>
+
+        <div class="group bg-white border border-gris-moyen rounded-lg p-7 cursor-default hover:-translate-y-[4px] hover:shadow-[0_12px_28px_rgba(12,35,64,0.09)] hover:border-gold/40 transition-all duration-300 reveal" data-reveal="up" data-reveal-delay="300">
+          <div class="w-12 h-12 rounded-xl bg-gris flex items-center justify-center mb-4 text-[1.2rem] text-gold group-hover:bg-navy group-hover:text-white transition-all duration-200">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <h3 class="font-serif text-[1rem] font-bold text-navy mb-2">Sécurisation des investissements</h3>
+          <p class="text-[0.85rem] text-[#666] leading-relaxed">Depuis la réforme foncière de 2022, le cadastre de Bangui a été modernisé et les procédures de délivrance des titres foncières ont été sécurisées. Nous vous accompagnons pour chaque étape juridique.</p>
+        </div>
+
+        <div class="group bg-white border border-gris-moyen rounded-lg p-7 cursor-default hover:-translate-y-[4px] hover:shadow-[0_12px_28px_rgba(12,35,64,0.09)] hover:border-gold/40 transition-all duration-300 reveal" data-reveal="up" data-reveal-delay="400">
+          <div class="w-12 h-12 rounded-xl bg-gris flex items-center justify-center mb-4 text-[1.2rem] text-gold group-hover:bg-navy group-hover:text-white transition-all duration-200">
+            <i class="fa-solid fa-people-arrows"></i>
+          </div>
+          <h3 class="font-serif text-[1rem] font-bold text-navy mb-2">Diaspora, un atout clé</h3>
+          <p class="text-[0.85rem] text-[#666] leading-relaxed">La diaspora centrafricaine en France est estimée à plus de 30 000 personnes. Nombreux sont ceux qui souhaitent investir ou construire à Bangui, mais la distance et les spécificités locales freinent les projets. C'est là que nous intervenons.</p>
+        </div>
+
+        <div class="group bg-white border border-gris-moyen rounded-lg p-7 cursor-default hover:-translate-y-[4px] hover:shadow-[0_12px_28px_rgba(12,35,64,0.09)] hover:border-gold/40 transition-all duration-300 reveal" data-reveal="up" data-reveal-delay="500">
+          <div class="w-12 h-12 rounded-xl bg-gris flex items-center justify-center mb-4 text-[1.2rem] text-gold group-hover:bg-navy group-hover:text-white transition-all duration-200">
+            <i class="fa-solid fa-city"></i>
+          </div>
+          <h3 class="font-serif text-[1rem] font-bold text-navy mb-2">Projets d'infrastructures majeurs</h3>
+          <p class="text-[0.85rem] text-[#666] leading-relaxed">La construction du pont de l'amitié, la réhabilitation de l'aéroport international et le développement des zones d'activité autour de Bangui renforcent l'attractivité de la capitale et la valeur des biens immobiliers.</p>
+        </div>
+
+        <div class="group bg-white border border-gris-moyen rounded-lg p-7 cursor-default hover:-translate-y-[4px] hover:shadow-[0_12px_28px_rgba(12,35,64,0.09)] hover:border-gold/40 transition-all duration-300 reveal" data-reveal="up" data-reveal-delay="600">
+          <div class="w-12 h-12 rounded-xl bg-gris flex items-center justify-center mb-4 text-[1.2rem] text-gold group-hover:bg-navy group-hover:text-white transition-all duration-200">
+            <i class="fa-solid fa-handshake"></i>
+          </div>
+          <h3 class="font-serif text-[1rem] font-bold text-navy mb-2">Accompagnement 100% à distance</h3>
+          <p class="text-[0.85rem] text-[#666] leading-relaxed">Pas besoin de vous déplacer pour investir à Bangui. Nous gérons tout, de la recherche du bien à la signature chez le notaire, avec des rapports réguliers et une transparence totale depuis la France.</p>
+          <a href="#contact" class="inline-flex items-center gap-1.5 text-gold font-semibold text-[0.85rem] mt-3 hover:text-navy transition-colors duration-200">
+            En savoir plus <i class="fa-solid fa-arrow-right text-xs"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== À PROPOS ===== -->
+  <div class="max-w-[1200px] mx-auto px-6 py-[80px]" id="apropos">
+    <div class="grid grid-cols-2 max-md:grid-cols-1 gap-16 items-center">
+
+      <!-- Image -->
+      <div class="apropos-img-col relative max-md:order-last">
+        <img src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?w=700&q=80" alt="Cabinet Bangui Patrimoine" class="rounded-lg w-full h-[480px] object-cover shadow-[0_16px_40px_rgba(12,35,64,0.12)]">
+        <!-- Badge flottant -->
+        <div class="absolute -bottom-5 -right-5 bg-white rounded-lg shadow-[0_8px_24px_rgba(12,35,64,0.12)] px-5 py-4 flex items-center gap-3 max-sm:hidden">
+          <div class="w-10 h-10 rounded-full bg-gold/15 flex items-center justify-center text-gold text-[1.1rem] shrink-0">
+            <i class="fa-solid fa-handshake"></i>
+          </div>
+          <div>
+            <div class="font-bold text-navy text-[0.92rem]">Cabinet de confiance</div>
+            <div class="text-[0.78rem] text-[#888]">Fondé par Raynald Rongba</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Texte -->
+      <div class="max-md:pl-9">
+        <div class="flex items-center gap-2.5 mb-3 reveal" data-reveal="left">
+          <span class="h-[2px] w-8 bg-gold block"></span>
+          <p class="text-[0.78rem] font-bold uppercase tracking-[2px] text-gold">Notre histoire</p>
+        </div>
+        <h2 class="font-serif text-[2rem] font-bold text-navy mb-5 reveal" data-reveal="left" data-reveal-delay="100">Un cabinet né d'une double culture, au service de la diaspora</h2>
+        <p class="text-[#555] text-[0.95rem] leading-relaxed mb-4 reveal" data-reveal="left" data-reveal-delay="200">Comme beaucoup d'entre vous, nous avons grandi avec cette double appartenance : <em class="text-navy font-medium">un pied en France, la tête à Bangui la Coquette.</em> Et comme beaucoup, nous avons vu des projets immobiliers rater — non par manque d'argent, mais par manque d'accompagnement fiable sur place.</p>
+        <p class="text-[#555] text-[0.95rem] leading-relaxed mb-4 reveal" data-reveal="left" data-reveal-delay="300">Bangui Patrimoine est né de cette conviction : <strong class="text-navy">la diaspora centrafricaine mérite un interlocuteur professionnel, honnête et transparent</strong>, qui comprend les réalités des deux côtés — le droit français, la fiscalité franco-centrafricaine, et les rouages du marché foncier à Bangui.</p>
+        <p class="text-[#555] text-[0.95rem] leading-relaxed mb-7 reveal" data-reveal="left" data-reveal-delay="400">Dirigé par <strong class="text-navy">Raynald Rongba</strong>, diplômé en finance patrimoniale (ESG Finance), le cabinet accompagne chaque client de la première consultation jusqu'à la remise des clés — et au-delà.</p>
+
+        <div class="grid grid-cols-2 gap-4 mb-7">
+          <div class="flex items-start gap-3 reveal" data-reveal="up" data-reveal-delay="200">
+            <div class="w-9 h-9 rounded-full bg-gold/12 flex items-center justify-center text-gold shrink-0 mt-0.5">
+              <i class="fa-solid fa-check text-sm"></i>
+            </div>
+            <div>
+              <div class="font-semibold text-navy text-[0.9rem]">Transparence totale</div>
+              <div class="text-[#888] text-[0.82rem]">Comptes rendus réguliers, zéro surprise</div>
+            </div>
+          </div>
+          <div class="flex items-start gap-3 reveal" data-reveal="up" data-reveal-delay="300">
+            <div class="w-9 h-9 rounded-full bg-gold/12 flex items-center justify-center text-gold shrink-0 mt-0.5">
+              <i class="fa-solid fa-check text-sm"></i>
+            </div>
+            <div>
+              <div class="font-semibold text-navy text-[0.9rem]">Double expertise</div>
+              <div class="text-[#888] text-[0.82rem]">Droit français & marché centrafricain</div>
+            </div>
+          </div>
+          <div class="flex items-start gap-3 reveal" data-reveal="up" data-reveal-delay="400">
+            <div class="w-9 h-9 rounded-full bg-gold/12 flex items-center justify-center text-gold shrink-0 mt-0.5">
+              <i class="fa-solid fa-check text-sm"></i>
+            </div>
+            <div>
+              <div class="font-semibold text-navy text-[0.9rem]">100% à distance</div>
+              <div class="text-[#888] text-[0.82rem]">Gérez votre projet depuis la France</div>
+            </div>
+          </div>
+          <div class="flex items-start gap-3 reveal" data-reveal="up" data-reveal-delay="500">
+            <div class="w-9 h-9 rounded-full bg-gold/12 flex items-center justify-center text-gold shrink-0 mt-0.5">
+              <i class="fa-solid fa-check text-sm"></i>
+            </div>
+            <div>
+              <div class="font-semibold text-navy text-[0.9rem]">Réseau local fiable</div>
+              <div class="text-[#888] text-[0.82rem]">Partenaires vérifiés sur le terrain à Bangui</div>
+            </div>
+          </div>
+        </div>
+
+        <a href="#contact" class="inline-flex items-center gap-2 bg-navy text-white px-6 py-3 rounded font-semibold text-[0.9rem] no-underline hover:bg-navy-clair transition-colors duration-200 reveal" data-reveal="up" data-reveal-delay="500">
+          Prendre rendez-vous <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== POURQUOI BANGUI PATRIMOINE ===== -->
+  <div class="bg-navy py-[80px] px-6" id="pourquoi">
+    <div class="max-w-[1100px] mx-auto">
+      <div class="text-center mb-14">
+        <div class="flex items-center justify-center gap-2.5 mb-2 reveal" data-reveal="up">
+          <span class="h-[2px] w-8 bg-gold block"></span>
+          <p class="text-[0.78rem] font-bold uppercase tracking-[2px] text-gold/80">Pourquoi nous choisir</p>
+          <span class="h-[2px] w-8 bg-gold block"></span>
+        </div>
+        <h2 class="font-serif text-[2rem] font-bold text-white mb-2.5 reveal" data-reveal="up" data-reveal-delay="100">Ce qui nous distingue</h2>
+        <p class="text-white/60 text-base max-w-[520px] mx-auto reveal" data-reveal="up" data-reveal-delay="200">Investir à distance demande confiance. Voici pourquoi nos clients nous la accordent.</p>
+      </div>
+      <div class="grid grid-cols-3 max-md:grid-cols-1 gap-6">
+        <div class="border border-white/10 rounded-lg p-7 reveal" data-reveal="up" data-reveal-delay="100">
+          <div class="text-gold text-[1.6rem] mb-4"><i class="fa-solid fa-shield-halved"></i></div>
+          <h3 class="font-serif text-[1rem] font-bold text-white mb-2">Sécurité juridique</h3>
+          <p class="text-white/55 text-[0.87rem] leading-relaxed">Vérification rigoureuse des titres fonciers, notaires partenaires à Bangui et accompagnement légal à chaque étape.</p>
+        </div>
+        <div class="border border-white/10 rounded-lg p-7 reveal" data-reveal="up" data-reveal-delay="200">
+          <div class="text-gold text-[1.6rem] mb-4"><i class="fa-solid fa-eye"></i></div>
+          <h3 class="font-serif text-[1rem] font-bold text-white mb-2">Transparence financière</h3>
+          <p class="text-white/55 text-[0.87rem] leading-relaxed">Budgets détaillés, factures, justificatifs et rapports hebdomadaires. Vous savez où va chaque franc CFA investi.</p>
+        </div>
+        <div class="border border-white/10 rounded-lg p-7 reveal" data-reveal="up" data-reveal-delay="300">
+          <div class="text-gold text-[1.6rem] mb-4"><i class="fa-solid fa-headset"></i></div>
+          <h3 class="font-serif text-[1rem] font-bold text-white mb-2">Disponibilité réelle</h3>
+          <p class="text-white/55 text-[0.87rem] leading-relaxed">Un conseiller dédié, joignable par téléphone, WhatsApp ou visio. La diaspora a besoin de réponses, pas de messageries automatiques.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== TÉMOIGNAGES ===== -->
+  <div class="max-w-[1200px] mx-auto px-6 py-[80px]" id="temoignages">
+    <div class="text-center mb-10">
+      <div class="flex items-center justify-center gap-2.5 mb-2 reveal" data-reveal="up">
+        <span class="h-[2px] w-8 bg-gold block"></span>
+        <p class="text-[0.78rem] font-bold uppercase tracking-[2px] text-gold">Ils nous font confiance</p>
+        <span class="h-[2px] w-8 bg-gold block"></span>
+      </div>
+      <h2 class="font-serif text-[2rem] font-bold text-navy mb-2.5 reveal" data-reveal="up" data-reveal-delay="100">Ce que disent nos clients</h2>
+      <p class="text-[#666] text-base max-w-[520px] mx-auto reveal" data-reveal="up" data-reveal-delay="200">Des membres de la diaspora centrafricaine qui ont construit leur patrimoine depuis la France</p>
+    </div>
+
+    <div class="max-w-[1100px] mx-auto overflow-hidden reveal" data-reveal="up" data-reveal-delay="300">
+      <div class="temo-track" id="temoTrack">
+
+        <div class="temo-slide px-2.5">
+          <div class="bg-white rounded-lg p-[36px] max-md:p-6 relative shadow-[0_4px_20px_rgba(12,35,64,0.08)] h-full border border-gris-moyen">
+            <div class="absolute top-5 right-6 font-serif text-[3.5rem] text-gold/20 leading-none">"</div>
+            <p class="text-[0.95rem] text-[#444] leading-relaxed italic mb-6">Grâce à Bangui Patrimoine, mon terrain est sécurisé, les fondations sont coulées et je n'ai pas eu besoin de faire un seul voyage. Chaque semaine, je reçois des photos et un rapport. C'est exactement ce dont j'avais besoin.</p>
+            <div class="flex items-center gap-3.5">
+              <div class="w-[48px] h-[48px] rounded-full bg-navy flex items-center justify-center text-white font-bold text-sm shrink-0">AG</div>
+              <div>
+                <strong class="block text-[0.92rem] text-navy">Armelle G.</strong>
+                <span class="text-[0.82rem] text-[#888]">Infirmière à Lyon, projet à Bangui km 10</span>
+                <div class="text-gold text-[0.8rem] mt-0.5">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="temo-slide px-2.5">
+          <div class="bg-white rounded-lg p-[36px] max-md:p-6 relative shadow-[0_4px_20px_rgba(12,35,64,0.08)] h-full border border-gris-moyen">
+            <div class="absolute top-5 right-6 font-serif text-[3.5rem] text-gold/20 leading-none">"</div>
+            <p class="text-[0.95rem] text-[#444] leading-relaxed italic mb-6">J'avais essayé de gérer seul l'achat d'un terrain à Bangui par l'intermédiaire de ma famille. Cela a failli mal tourner. Avec Raynald, tout a été fait dans les règles, avec un notaire et des documents en bonne et due forme. Merci de la rigueur.</p>
+            <div class="flex items-center gap-3.5">
+              <div class="w-[48px] h-[48px] rounded-full bg-navy flex items-center justify-center text-white font-bold text-sm shrink-0">DM</div>
+              <div>
+                <strong class="block text-[0.92rem] text-navy">David M.</strong>
+                <span class="text-[0.82rem] text-[#888]">Ingénieur à Paris, acquisition de terrain</span>
+                <div class="text-gold text-[0.8rem] mt-0.5">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="temo-slide px-2.5">
+          <div class="bg-white rounded-lg p-[36px] max-md:p-6 relative shadow-[0_4px_20px_rgba(12,35,64,0.08)] h-full border border-gris-moyen">
+            <div class="absolute top-5 right-6 font-serif text-[3.5rem] text-gold/20 leading-none">"</div>
+            <p class="text-[0.95rem] text-[#444] leading-relaxed italic mb-6">Je voulais préparer ma retraite avec une maison à Bangui pour mes vieux jours. Bangui Patrimoine a tout géré, du plan de la maison jusqu'à la clôture. J'arrive en juin découvrir ma maison pour la première fois. Je ne réalise pas encore.</p>
+            <div class="flex items-center gap-3.5">
+              <div class="w-[48px] h-[48px] rounded-full bg-navy flex items-center justify-center text-white font-bold text-sm shrink-0">BK</div>
+              <div>
+                <strong class="block text-[0.92rem] text-navy">Bernadette K.</strong>
+                <span class="text-[0.82rem] text-[#888]">Fonctionnaire à Bordeaux, retraite préparée</span>
+                <div class="text-gold text-[0.8rem] mt-0.5">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="temo-slide px-2.5">
+          <div class="bg-white rounded-lg p-[36px] max-md:p-6 relative shadow-[0_4px_20px_rgba(12,35,64,0.08)] h-full border border-gris-moyen">
+            <div class="absolute top-5 right-6 font-serif text-[3.5rem] text-gold/20 leading-none">"</div>
+            <p class="text-[0.95rem] text-[#444] leading-relaxed italic mb-6">La consultation initiale était gratuite et sans blabla commercial. Raynald a été direct sur les réalités du marché à Bangui, les risques et les opportunités. C'est ce réalisme qui m'a convaincu de lui faire confiance pour mon projet.</p>
+            <div class="flex items-center gap-3.5">
+              <div class="w-[48px] h-[48px] rounded-full bg-navy flex items-center justify-center text-white font-bold text-sm shrink-0">JN</div>
+              <div>
+                <strong class="block text-[0.92rem] text-navy">Jean-Baptiste N.</strong>
+                <span class="text-[0.82rem] text-[#888]">Commercial à Strasbourg, investisseur immobilier</span>
+                <div class="text-gold text-[0.8rem] mt-0.5">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ===== CTA BANDE ===== -->
+  <div class="bg-gris border-y border-gris-moyen py-16 px-6">
+    <div class="max-w-[900px] mx-auto text-center reveal" data-reveal="up">
+      <div class="text-gold text-[2rem] mb-4"><i class="fa-solid fa-star-of-life"></i></div>
+      <h2 class="font-serif text-[1.9rem] font-bold text-navy mb-4">Votre maison à Bangui commence par une conversation</h2>
+      <p class="text-[#666] text-[1rem] max-w-[580px] mx-auto mb-7">La première consultation est gratuite, sans engagement et peut se faire par téléphone, WhatsApp ou visio depuis n'importe où en France ou dans le monde.</p>
+      <div class="flex gap-3 justify-center flex-wrap">
+        <a href="#contact" class="bg-navy text-white px-[28px] py-3 rounded font-bold text-[0.95rem] no-underline hover:bg-navy-clair transition-colors duration-200">
+          <i class="fa-solid fa-calendar-check mr-2"></i>Prendre rendez-vous
+        </a>
+        <a href="https://wa.me/33XXXXXXXXX" target="_blank" class="bg-[#25D366] text-white px-[28px] py-3 rounded font-bold text-[0.95rem] no-underline hover:bg-[#1ebe5a] transition-colors duration-200">
+          <i class="fa-brands fa-whatsapp mr-2"></i>WhatsApp direct
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== CONTACT ===== -->
+  <div class="max-w-[1100px] mx-auto px-6 py-[80px]" id="contact">
+    <div class="grid grid-cols-2 max-md:grid-cols-1 gap-16">
+
+      <!-- Infos -->
+      <div>
+        <div class="flex items-center gap-2.5 mb-3 reveal" data-reveal="up">
+          <span class="h-[2px] w-8 bg-gold block"></span>
+          <p class="text-[0.78rem] font-bold uppercase tracking-[2px] text-gold">Nous contacter</p>
+        </div>
+        <h2 class="font-serif text-[1.9rem] font-bold text-navy mb-4 reveal" data-reveal="up" data-reveal-delay="100">Parlons de votre projet</h2>
+        <p class="text-[#555] text-[0.95rem] leading-relaxed mb-8 reveal" data-reveal="up" data-reveal-delay="200">Décrivez-nous votre projet en quelques mots et nous vous rappelons sous 24h pour une consultation initiale gratuite.</p>
+
+        <div class="flex flex-col gap-5">
+          <div class="flex items-start gap-4 reveal" data-reveal="up" data-reveal-delay="100">
+            <div class="w-10 h-10 rounded-lg bg-gris flex items-center justify-center text-gold shrink-0 mt-0.5">
+              <i class="fa-brands fa-whatsapp text-[1rem]"></i>
+            </div>
+            <div>
+              <div class="font-semibold text-navy text-[0.9rem] mb-0.5">WhatsApp (réponse rapide)</div>
+              <a href="https://wa.me/33XXXXXXXXX" class="text-[#666] text-[0.88rem] no-underline hover:text-gold transition-colors duration-200">+33 X XX XX XX XX</a>
+            </div>
+          </div>
+          <div class="flex items-start gap-4 reveal" data-reveal="up" data-reveal-delay="200">
+            <div class="w-10 h-10 rounded-lg bg-gris flex items-center justify-center text-gold shrink-0 mt-0.5">
+              <i class="fa-regular fa-envelope text-[1rem]"></i>
+            </div>
+            <div>
+              <div class="font-semibold text-navy text-[0.9rem] mb-0.5">Email</div>
+              <a href="mailto:contact@bangui-patrimoine.fr" class="text-[#666] text-[0.88rem] no-underline hover:text-gold transition-colors duration-200">contact@bangui-patrimoine.fr</a>
+            </div>
+          </div>
+          <div class="flex items-start gap-4 reveal" data-reveal="up" data-reveal-delay="300">
+            <div class="w-10 h-10 rounded-lg bg-gris flex items-center justify-center text-gold shrink-0 mt-0.5">
+              <i class="fa-solid fa-globe text-[1rem]"></i>
+            </div>
+            <div>
+              <div class="font-semibold text-navy text-[0.9rem] mb-0.5">Site web</div>
+              <span class="text-[#666] text-[0.88rem]">bangui-patrimoine.fr</span>
+            </div>
+          </div>
+          <div class="flex items-start gap-4 reveal" data-reveal="up" data-reveal-delay="400">
+            <div class="w-10 h-10 rounded-lg bg-gris flex items-center justify-center text-gold shrink-0 mt-0.5">
+              <i class="fa-brands fa-facebook-f text-[1rem]"></i>
+            </div>
+            <div>
+              <div class="font-semibold text-navy text-[0.9rem] mb-0.5">Facebook</div>
+              <a href="https://www.facebook.com/people/Bangui-Patrimoine/61562111173801/" target="_blank" class="text-[#666] text-[0.88rem] no-underline hover:text-gold transition-colors duration-200">Bangui Patrimoine</a>
+            </div>
+          </div>
+          <div class="flex items-start gap-4 reveal" data-reveal="up" data-reveal-delay="500">
+            <div class="w-10 h-10 rounded-lg bg-gris flex items-center justify-center text-gold shrink-0 mt-0.5">
+              <i class="fa-brands fa-instagram text-[1rem]"></i>
+            </div>
+            <div>
+              <div class="font-semibold text-navy text-[0.9rem] mb-0.5">Instagram</div>
+              <a href="https://www.instagram.com/bangui.patrimoine/" target="_blank" class="text-[#666] text-[0.88rem] no-underline hover:text-gold transition-colors duration-200">@bangui.patrimoine</a>
+            </div>
+          </div>
+          <div class="flex items-start gap-4 reveal" data-reveal="up" data-reveal-delay="600">
+            <div class="w-10 h-10 rounded-lg bg-gris flex items-center justify-center text-gold shrink-0 mt-0.5">
+              <i class="fa-brands fa-linkedin text-[1rem]"></i>
+            </div>
+            <div>
+              <div class="font-semibold text-navy text-[0.9rem] mb-0.5">LinkedIn</div>
+              <a href="https://www.linkedin.com/in/raynald-rongba-2498a999/" target="_blank" class="text-[#666] text-[0.88rem] no-underline hover:text-gold transition-colors duration-200">Raynald Rongba — Bangui Patrimoine</a>
+            </div>
+          </div>
+          <div class="flex items-start gap-4 reveal" data-reveal="up" data-reveal-delay="700">
+            <div class="w-10 h-10 rounded-lg bg-gris flex items-center justify-center text-gold shrink-0 mt-0.5">
+              <i class="fa-regular fa-clock text-[1rem]"></i>
+            </div>
+            <div>
+              <div class="font-semibold text-navy text-[0.9rem] mb-0.5">Horaires de consultation</div>
+              <span class="text-[#666] text-[0.88rem]">Lundi – Vendredi, 9h – 19h (Paris)<br>Consultations en soirée ou weekend sur RDV</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Formulaire -->
+      <div class="reveal" data-reveal="right">
+        <div class="bg-gris rounded-lg p-8 border border-gris-moyen">
+          <h3 class="font-serif text-[1.15rem] font-bold text-navy mb-5">Demande de consultation gratuite</h3>
+          <div id="contactForm" class="flex flex-col gap-4">
+            <div class="grid grid-cols-2 gap-4 max-sm:grid-cols-1">
+              <div>
+                <label class="block text-[0.8rem] font-semibold text-navy mb-1.5">Prénom *</label>
+                <input id="cfPrenom" type="text" placeholder="Jean-Baptiste" class="w-full px-3.5 py-[10px] border border-gris-moyen rounded text-[0.9rem] font-sans text-[#222] outline-none focus:border-gold bg-white transition-colors duration-200">
+              </div>
+              <div>
+                <label class="block text-[0.8rem] font-semibold text-navy mb-1.5">Nom *</label>
+                <input id="cfNom" type="text" placeholder="Nguéssé" class="w-full px-3.5 py-[10px] border border-gris-moyen rounded text-[0.9rem] font-sans text-[#222] outline-none focus:border-gold bg-white transition-colors duration-200">
+              </div>
+            </div>
+            <div>
+              <label class="block text-[0.8rem] font-semibold text-navy mb-1.5">Email *</label>
+              <input id="cfEmail" type="email" placeholder="jean-baptiste@email.com" class="w-full px-3.5 py-[10px] border border-gris-moyen rounded text-[0.9rem] font-sans text-[#222] outline-none focus:border-gold bg-white transition-colors duration-200">
+            </div>
+            <div>
+              <label class="block text-[0.8rem] font-semibold text-navy mb-1.5">Téléphone / WhatsApp</label>
+              <input id="cfTel" type="tel" placeholder="+33 6 XX XX XX XX" class="w-full px-3.5 py-[10px] border border-gris-moyen rounded text-[0.9rem] font-sans text-[#222] outline-none focus:border-gold bg-white transition-colors duration-200">
+            </div>
+            <div>
+              <label class="block text-[0.8rem] font-semibold text-navy mb-1.5">Type de projet *</label>
+              <select id="cfProjet" class="w-full px-3.5 py-[10px] border border-gris-moyen rounded text-[0.9rem] font-sans text-[#222] outline-none focus:border-gold bg-white transition-colors duration-200">
+                <option value="" disabled selected>Choisir un type de projet</option>
+                <option>Acquisition de terrain à Bangui</option>
+                <option>Construction clé en main</option>
+                <option>Achat de maison / appartement</option>
+                <option>Gestion de patrimoine existant</option>
+                <option>Planification successorale</option>
+                <option>Conseil en investissement</option>
+                <option>Autre</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-[0.8rem] font-semibold text-navy mb-1.5">Budget estimé</label>
+              <select id="cfBudget" class="w-full px-3.5 py-[10px] border border-gris-moyen rounded text-[0.9rem] font-sans text-[#222] outline-none focus:border-gold bg-white transition-colors duration-200">
+                <option value="" disabled selected>Votre enveloppe budgétaire</option>
+                <option>Moins de 10 000 €</option>
+                <option>10 000 € – 25 000 €</option>
+                <option>25 000 € – 50 000 €</option>
+                <option>50 000 € – 100 000 €</option>
+                <option>Plus de 100 000 €</option>
+                <option>À définir ensemble</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-[0.8rem] font-semibold text-navy mb-1.5">Votre message</label>
+              <textarea id="cfMessage" rows="3" placeholder="Décrivez brièvement votre projet, vos questions ou vos contraintes..." class="w-full px-3.5 py-[10px] border border-gris-moyen rounded text-[0.9rem] font-sans text-[#222] outline-none focus:border-gold resize-y bg-white transition-colors duration-200"></textarea>
+            </div>
+            <button id="cfSubmit" onclick="submitContactForm()" class="w-full bg-navy text-white py-3 rounded font-bold text-[0.9rem] cursor-pointer border-none hover:bg-navy-clair transition-colors duration-200 flex items-center justify-center gap-2">
+              <i class="fa-solid fa-paper-plane"></i> Envoyer ma demande
+            </button>
+            <p class="text-[#999] text-[0.78rem] text-center">Première consultation 100% gratuite · Réponse sous 24h</p>
+          </div>
+
+          <!-- Succès -->
+          <div id="contactSuccess" class="hidden text-center py-8">
+            <div class="w-14 h-14 rounded-full bg-[#10B981]/12 flex items-center justify-center mx-auto mb-4 text-[#10B981] text-[1.5rem]">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <h4 class="font-serif font-bold text-navy text-[1.1rem] mb-2">Message envoyé !</h4>
+            <p class="text-[#666] text-[0.88rem] leading-relaxed">Merci pour votre message. Raynald vous recontactera sous 24h pour organiser votre consultation gratuite.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== MINI PREVIEW MODAL ===== -->
+  <div class="modal-overlay" id="previewModalOverlay">
+    <div class="modal-content max-w-[420px]">
+      <button class="modal-close" onclick="closePreviewModal()"><i class="fa-solid fa-xmark"></i></button>
+
+      <div class="relative h-[180px] bg-gris overflow-hidden rounded-t-lg">
+        <img id="previewImg" src="" alt="" class="w-full h-full object-cover">
+        <span id="previewBadge" class="absolute top-3 left-3 px-2.5 py-0.5 rounded text-[0.7rem] font-bold"></span>
+        <span id="previewType" class="absolute top-3 right-3 px-2.5 py-1 rounded text-[0.7rem] font-bold bg-white/90 text-navy backdrop-blur-sm"></span>
+      </div>
+
+      <div class="p-5">
+        <div class="flex items-start justify-between gap-3 mb-2">
+          <h3 id="previewTitle" class="font-serif text-[1.05rem] font-bold text-navy leading-tight"></h3>
+          <div class="text-right shrink-0">
+            <div id="previewPrice" class="font-bold text-navy text-[0.95rem]"></div>
+            <div id="previewPriceFCFA" class="text-[0.65rem] text-[#999]"></div>
+          </div>
+        </div>
+        <p id="previewLocation" class="text-[0.8rem] text-[#888] flex items-center gap-1.5 mb-3">
+          <i class="fa-solid fa-location-dot text-gold/70"></i>
+        </p>
+        <p id="previewDesc" class="text-[0.82rem] text-[#666] leading-relaxed line-clamp-2 mb-4"></p>
+
+        <div class="flex flex-wrap gap-2.5 mb-4" id="previewInfos"></div>
+
+        <div class="flex gap-2.5">
+          <button onclick="openModal(currentPreviewId)" class="flex-1 bg-navy text-white py-2.5 font-semibold text-[0.82rem] rounded cursor-pointer border-none hover:bg-navy-clair transition-colors duration-200">
+            <i class="fa-solid fa-expand mr-1.5"></i> Voir plus de détails
+          </button>
+          <button onclick="openContactModal(currentPreviewId)" class="flex-1 block text-center border border-gris-moyen text-navy py-2.5 font-semibold text-[0.82rem] rounded cursor-pointer hover:border-navy hover:bg-navy/5 transition-all duration-200">
+            <i class="fa-regular fa-calendar-check mr-1.5"></i> Visite
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== DETAIL MODAL (Biens en vedette) ===== -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal-content max-w-[680px] max-h-[90vh] overflow-y-auto">
+      <button class="modal-close" onclick="closeModal()"><i class="fa-solid fa-xmark"></i></button>
+
+      <!-- Carousel -->
+      <div class="relative h-[300px] max-md:h-[200px] bg-gris overflow-hidden">
+        <div id="modalCarousel" class="flex transition-transform duration-500 ease-out h-full"></div>
+        <button id="modalPrevBtn" class="absolute left-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white/80 flex items-center justify-center text-navy cursor-pointer border-none hover:bg-white transition-all text-sm shadow-md" onclick="prevModalImage()">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button id="modalNextBtn" class="absolute right-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white/80 flex items-center justify-center text-navy cursor-pointer border-none hover:bg-white transition-all text-sm shadow-md" onclick="nextModalImage()">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+        <div id="modalDots" class="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-1.5"></div>
+        <div id="modalBadge" class="absolute top-3 right-3 px-3 py-1 rounded text-[0.72rem] font-bold"></div>
+      </div>
+
+      <div class="p-7 max-md:p-5">
+        <div class="flex items-start justify-between gap-4 mb-3">
+          <div>
+            <h3 id="modalTitle" class="font-serif text-[1.25rem] font-bold text-navy"></h3>
+            <p id="modalLocation" class="text-[0.85rem] text-[#888] flex items-center gap-1.5 mt-0.5">
+              <i class="fa-solid fa-location-dot text-gold/70"></i>
+            </p>
+          </div>
+          <div class="text-right shrink-0">
+            <div id="modalPrice" class="font-bold text-navy text-[1.2rem]"></div>
+            <div id="modalPriceFCFA" class="text-[0.75rem] text-[#888]"></div>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap gap-4 mb-5 text-[0.85rem] bg-gris p-3.5 rounded-lg" id="modalInfos"></div>
+
+        <p id="modalDesc" class="text-[0.9rem] text-[#555] leading-relaxed mb-5"></p>
+
+        <div id="modalFeatures" class="flex flex-wrap gap-2 mb-6"></div>
+
+        <div class="flex gap-3 pt-4 border-t border-gris-moyen">
+          <button onclick="openContactModal(currentModalId)" class="flex-1 block text-center bg-navy text-white py-3 rounded font-bold text-[0.9rem] cursor-pointer border-none hover:bg-navy-clair transition-colors duration-200">
+            <i class="fa-regular fa-calendar-check mr-2"></i> Demander une visite
+          </button>
+          <a id="modalWhatsAppBtn" href="#" target="_blank" class="flex-1 block text-center bg-[#25D366] text-white py-3 rounded font-bold text-[0.9rem] no-underline hover:bg-[#1ebe5a] transition-colors duration-200">
+            <i class="fa-brands fa-whatsapp mr-2"></i> WhatsApp
+          </a>
+        </div>
+        <p id="modalRef" class="text-[0.72rem] text-[#bbb] text-center mt-3"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== CONTACT MODAL (Visite) ===== -->
+  <div class="modal-overlay" id="contactModalOverlay">
+    <div class="modal-content max-w-[540px]">
+      <button class="modal-close" onclick="closeContactModal()"><i class="fa-solid fa-xmark"></i></button>
+      <div class="p-8 max-md:p-6">
+        <h3 class="font-serif text-[1.25rem] font-bold text-navy mb-1.5"><i class="fa-solid fa-calendar-check text-gold mr-2"></i> Demande de visite</h3>
+        <p id="contactModalProperty" class="text-[0.85rem] text-[#888] mb-6"></p>
+
+        <form id="contactModalForm">
+          <div class="flex flex-wrap gap-3.5 mb-3.5">
+            <input type="text" id="cmName" name="name" placeholder="Prénom et nom" required class="flex-1 min-w-[160px] px-3.5 py-[11px] border border-gris-moyen rounded text-[0.9rem] font-sans text-[#222] outline-none focus:border-gold bg-white transition-colors duration-200">
+            <input type="tel" id="cmPhone" name="phone" placeholder="Téléphone" required class="flex-1 min-w-[160px] px-3.5 py-[11px] border border-gris-moyen rounded text-[0.9rem] font-sans text-[#222] outline-none focus:border-gold bg-white transition-colors duration-200">
+          </div>
+          <input type="email" id="cmEmail" name="email" placeholder="Adresse email" class="w-full px-3.5 py-[11px] border border-gris-moyen rounded text-[0.9rem] font-sans text-[#222] outline-none focus:border-gold bg-white transition-colors duration-200 mb-3.5">
+          <textarea id="cmMessage" name="message" rows="3" required class="w-full px-3.5 py-[11px] border border-gris-moyen rounded text-[0.9rem] font-sans text-[#222] outline-none focus:border-gold bg-white transition-colors duration-200 resize-y min-h-[80px] mb-4" placeholder="Votre message..."></textarea>
+
+          <div class="flex gap-3">
+            <button type="submit" id="cmSubmitBtn" class="flex-1 bg-navy text-white border-none py-3 rounded font-bold text-[0.9rem] cursor-pointer flex items-center justify-center gap-2 hover:bg-navy-clair transition-colors duration-200">
+              <i class="fa-solid fa-paper-plane" id="cmBtnIcon"></i>
+              <span id="cmBtnText">Envoyer la demande</span>
+              <svg id="cmBtnSpinner" class="hidden animate-spin h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+              </svg>
+            </button>
+            <a id="cmWhatsAppBtn" href="#" target="_blank" class="flex-none bg-[#25D366] text-white px-4 py-3 rounded font-bold text-[0.9rem] no-underline hover:bg-[#1ebe5a] transition-colors duration-200 flex items-center justify-center gap-2">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+          <p class="text-[#999] text-[0.75rem] text-center mt-3">Ou contactez-nous directement par WhatsApp</p>
+        </form>
+
+        <!-- Success -->
+        <div id="contactModalSuccess" class="hidden text-center py-6">
+          <div class="w-14 h-14 rounded-full bg-[#10B981]/12 flex items-center justify-center mx-auto mb-4 text-[#10B981] text-[1.5rem]">
+            <i class="fa-solid fa-circle-check"></i>
+          </div>
+          <h4 class="font-serif font-bold text-navy text-[1.1rem] mb-2">Demande envoyée !</h4>
+          <p class="text-[#666] text-[0.88rem] leading-relaxed">Merci pour votre intérêt. Notre équipe vous recontactera sous 24h pour organiser votre visite.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="bg-navy-fonce text-white/60">
+    <div class="max-w-[1200px] mx-auto px-6 py-14 grid grid-cols-3 max-md:grid-cols-1 gap-10">
+
+      <!-- Brand -->
+      <div>
+        <div class="flex items-center gap-2.5 mb-4">
+          <svg class="w-8 h-8" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7 30 L7 18 L18 10 L29 18 L29 30" stroke="white" stroke-width="1.8" fill="none"/>
+            <path d="M5 19 L18 9 L31 19" stroke="#B8912A" stroke-width="2" fill="none" stroke-linecap="round"/>
+            <rect x="14.5" y="22" width="7" height="8" rx="0.8" fill="none" stroke="white" stroke-width="1.4"/>
+          </svg>
+          <span class="font-serif text-white font-bold text-[1rem]">Bangui Patrimoine</span>
+        </div>
+        <p class="text-white/50 text-[0.87rem] leading-relaxed mb-5 max-w-[260px]">Cabinet franco-centrafricain spécialisé dans la gestion de patrimoine immobilier pour la diaspora centrafricaine.</p>
+        <div class="flex gap-3">
+          <a href="https://www.facebook.com/people/Bangui-Patrimoine/61562111173801/" target="_blank" class="w-8 h-8 rounded bg-white/8 flex items-center justify-center text-white/50 hover:bg-gold hover:text-white transition-all duration-200 text-sm">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com/bangui.patrimoine/" target="_blank" class="w-8 h-8 rounded bg-white/8 flex items-center justify-center text-white/50 hover:bg-gold hover:text-white transition-all duration-200 text-sm">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://www.tiktok.com/@banguipatrimoine" target="_blank" class="w-8 h-8 rounded bg-white/8 flex items-center justify-center text-white/50 hover:bg-gold hover:text-white transition-all duration-200 text-sm">
+            <i class="fa-brands fa-tiktok"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/raynald-rongba-2498a999/" target="_blank" class="w-8 h-8 rounded bg-white/8 flex items-center justify-center text-white/50 hover:bg-gold hover:text-white transition-all duration-200 text-sm">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="https://wa.me/33XXXXXXXXX" target="_blank" class="w-8 h-8 rounded bg-white/8 flex items-center justify-center text-white/50 hover:bg-gold hover:text-white transition-all duration-200 text-sm">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Navigation -->
+      <div>
+        <h4 class="text-[0.78rem] font-bold uppercase tracking-[2px] text-gold mb-5">Navigation</h4>
+        <div class="flex flex-col gap-3">
+          <a href="#services" class="text-white/55 no-underline text-[0.88rem] hover:text-gold transition-colors duration-200">Nos services</a>
+          <a href="#vedettes" class="text-white/55 no-underline text-[0.88rem] hover:text-gold transition-colors duration-200">Biens en vedette</a>
+          <a href="biens-en-vente.html" class="text-white/55 no-underline text-[0.88rem] hover:text-gold transition-colors duration-200">Toutes les offres</a>
+          <a href="#pourquoi-investir" class="text-white/55 no-underline text-[0.88rem] hover:text-gold transition-colors duration-200">Investir à Bangui</a>
+          <a href="#apropos" class="text-white/55 no-underline text-[0.88rem] hover:text-gold transition-colors duration-200">À propos</a>
+          <a href="#temoignages" class="text-white/55 no-underline text-[0.88rem] hover:text-gold transition-colors duration-200">Témoignages</a>
+          <a href="#contact" class="text-white/55 no-underline text-[0.88rem] hover:text-gold transition-colors duration-200">Contact</a>
+        </div>
+      </div>
+
+      <!-- Contact -->
+      <div>
+        <h4 class="text-[0.78rem] font-bold uppercase tracking-[2px] text-gold mb-5">Contact</h4>
+        <div class="flex flex-col gap-3.5">
+          <div class="flex items-center gap-3 text-white/55 text-[0.87rem]">
+            <i class="fa-solid fa-location-dot text-gold/60 w-4 text-center shrink-0"></i>
+            <span>Basé à Paris — Opérations à Bangui, RCA</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <i class="fa-brands fa-whatsapp text-gold/60 w-4 text-center shrink-0"></i>
+            <a href="https://wa.me/33XXXXXXXXX" class="text-white/55 no-underline text-[0.87rem] hover:text-gold transition-colors">WhatsApp — +33 X XX XX XX XX</a>
+          </div>
+          <div class="flex items-center gap-3">
+            <i class="fa-regular fa-envelope text-gold/60 w-4 text-center shrink-0"></i>
+            <a href="mailto:contact@bangui-patrimoine.fr" class="text-white/55 no-underline text-[0.87rem] hover:text-gold transition-colors">contact@bangui-patrimoine.fr</a>
+          </div>
+          <div class="flex items-center gap-3">
+            <i class="fa-solid fa-globe text-gold/60 w-4 text-center shrink-0"></i>
+            <span class="text-white/55 text-[0.87rem]">bangui-patrimoine.fr</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom -->
+    <div class="border-t border-white/8 px-6 py-5 flex flex-col sm:flex-row items-center justify-between gap-3 max-w-[1200px] mx-auto">
+      <p class="text-white/35 text-[0.8rem]">
+        &copy; 2026 <span class="text-gold/70">Bangui Patrimoine</span> — Cabinet franco-centrafricain en gestion de patrimoine immobilier
+      </p>
+      <a href="#" class="inline-flex items-center gap-1.5 text-white/35 text-[0.8rem] no-underline hover:text-gold transition-colors duration-200">
+        <i class="fa-solid fa-arrow-up"></i> Haut de page
+      </a>
+    </div>
+  </footer>
+
+  <!-- WhatsApp float -->
+  <a href="https://wa.me/33XXXXXXXXX" target="_blank" class="fixed bottom-[22px] right-[22px] bg-[#25D366] text-white w-[54px] h-[54px] rounded-full flex items-center justify-center text-[1.5rem] no-underline shadow-[0_4px_14px_rgba(0,0,0,0.25)] z-50 hover:bg-[#1ebe5a] transition-colors duration-200" aria-label="WhatsApp Bangui Patrimoine">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <script src="script.js"></script>
+  <script>
+    // ===== Biens en vedette =====
+    (function() {
+      var grid = document.getElementById('vedettesGrid');
+      if (!grid) return;
+
+      function formatPrix(prix) {
+        return new Intl.NumberFormat('fr-FR').format(prix) + ' €';
+      }
+
+      function formatPrixFCFA(prix) {
+        return new Intl.NumberFormat('fr-FR').format(prix) + ' FCFA';
+      }
+
+      function showVedettesEmpty() {
+        grid.innerHTML = '<div class="col-span-full flex flex-col items-center justify-center py-16 reveal" data-reveal="up">' +
+          '<div class="w-20 h-20 bg-gris rounded-2xl flex items-center justify-center mb-5">' +
+            '<i class="fa-solid fa-building text-[#ccc] text-3xl"></i>' +
+          '</div>' +
+          '<p class="text-[#999] font-semibold text-[1.05rem] mb-2">Aucun bien disponible pour le moment</p>' +
+          '<p class="text-[#bbb] text-sm max-w-[320px] text-center mb-5">Revenez bientôt, de nouvelles propriétés arrivent régulièrement. Consultez notre catalogue complet pour découvrir toutes les offres.</p>' +
+          '<a href="biens-en-vente.html" class="bg-navy text-white no-underline px-6 py-2.5 rounded font-semibold text-[0.9rem] hover:bg-navy-clair transition-colors">Voir tous les biens</a>' +
+        '</div>';
+        if (window.observeReveal) {
+          window.observeReveal(grid.querySelectorAll('.reveal'));
+        }
+      }
+
+      function renderVedettes(data) {
+        var items = data.slice(0, 3);
+        if (items.length === 0) {
+          showVedettesEmpty();
+          return;
+        }
+
+        grid.innerHTML = items.map(function(b) {
+          var badgeBg = b.badgeColor === 'gold' ? 'bg-gold text-navy-fonce' : 'bg-navy text-white';
+
+          var infos = '';
+          if (b.surface) infos += '<span class="flex items-center gap-1.5"><i class="fa-regular fa-compass text-gold/70"></i>' + b.surface + ' m²</span>';
+          if (b.chambres) infos += '<span class="flex items-center gap-1.5"><i class="fa-regular fa-bed text-gold/70"></i>' + b.chambres + ' ch.</span>';
+          if (b.sdb) infos += '<span class="flex items-center gap-1.5"><i class="fa-regular fa-bath text-gold/70"></i>' + b.sdb + ' sdb</span>';
+          if (!b.surface && !b.chambres && !b.sdb && b.pieces) infos += '<span class="flex items-center gap-1.5"><i class="fa-regular fa-door-open text-gold/70"></i>' + b.pieces + ' pièces</span>';
+
+          return '<div class="bg-white rounded-lg overflow-hidden border border-gris-moyen shadow-sm hover:-translate-y-[4px] hover:shadow-[0_12px_28px_rgba(12,35,64,0.1)] hover:border-gold/40 transition-all duration-300 flex flex-col reveal" data-reveal="up" data-reveal-delay="' + (items.indexOf(b) * 100 + 100) + '">' +
+            '<div class="relative h-[200px] overflow-hidden bg-gris">' +
+              '<img src="' + b.images[0] + '" alt="' + b.titre + '" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" loading="lazy">' +
+              (b.badge ? '<span class="absolute top-3 left-3 px-2.5 py-0.5 rounded text-[0.7rem] font-bold ' + badgeBg + '">' + b.badge + '</span>' : '') +
+              '<span class="absolute top-3 right-3 px-2.5 py-1 rounded text-[0.7rem] font-bold bg-white/90 text-navy backdrop-blur-sm">' + b.type + '</span>' +
+            '</div>' +
+            '<div class="p-[18px_20px] flex flex-col flex-1">' +
+              '<div class="flex items-start justify-between gap-2 mb-2">' +
+                '<h3 class="font-serif text-[1rem] font-bold text-navy leading-tight">' + b.titre + '</h3>' +
+                '<div class="text-right shrink-0">' +
+                  '<div class="font-bold text-navy text-[0.95rem]">' + formatPrix(b.prix) + '</div>' +
+                  '<div class="text-[0.65rem] text-[#999]">' + formatPrixFCFA(b.prix_fcfa) + '</div>' +
+                '</div>' +
+              '</div>' +
+              '<p class="text-[0.8rem] text-[#888] flex items-center gap-1.5 mb-3">' +
+                '<i class="fa-solid fa-location-dot text-gold/70 text-[0.7rem]"></i>' + b.quartier + ', Bangui' +
+              '</p>' +
+              '<p class="text-[0.82rem] text-[#666] leading-relaxed mb-4 line-clamp-2">' + b.description + '</p>' +
+              '<div class="flex flex-wrap gap-x-4 gap-y-1.5 text-[0.78rem] text-[#555] mb-4 py-3 border-t border-gris-moyen">' +
+                infos +
+              '</div>' +
+              '<div class="flex gap-2 mt-auto">' +
+                '<button onclick="openPreviewModal(' + b.id + ')" class="flex-1 bg-navy text-white py-2.5 font-semibold text-[0.82rem] rounded cursor-pointer border-none hover:bg-navy-clair transition-colors duration-200 flex items-center justify-center gap-1.5"><i class="fa-solid fa-eye"></i> Détails</button>' +
+                '<button onclick="openContactModal(' + b.id + ')" class="flex-1 block text-center border border-gris-moyen text-navy py-2.5 font-semibold text-[0.82rem] rounded cursor-pointer hover:border-navy hover:bg-navy/5 transition-all duration-200"><i class="fa-regular fa-calendar-check"></i> Visite</button>' +
+              '</div>' +
+            '</div>' +
+          '</div>';
+        }).join('');
+
+        if (window.observeReveal) {
+          window.observeReveal(grid.querySelectorAll('.reveal'));
+        } else {
+          grid.querySelectorAll('.reveal').forEach(function(el) { el.classList.add('active'); });
+        }
+      }
+
+      // Chargement des données
+      var xhr = new XMLHttpRequest();
+      xhr.open('GET', '_data/biens.json', true);
+      xhr.onload = function() {
+        if (xhr.status === 200) {
+          try {
+            var data = JSON.parse(xhr.responseText);
+            window._vedettesData = data;
+            renderVedettes(data);
+          } catch(e) {
+            showVedettesEmpty();
+          }
+        } else {
+          showVedettesEmpty();
+        }
+      };
+      xhr.onerror = function() { showVedettesEmpty(); };
+      xhr.send();
+    // ===== Contact Modal Functions =====
+    window.openContactModal = function(id) {
+      var bien = null;
+      // Find the bien from the data that was already loaded
+      if (window._vedettesData) {
+        bien = window._vedettesData.find(function(b) { return b.id === id; });
+      }
+      if (!bien) return;
+
+      // Reset form state
+      document.getElementById('contactModalForm').classList.remove('hidden');
+      document.getElementById('contactModalSuccess').classList.add('hidden');
+      var resetBtn = document.getElementById('cmSubmitBtn');
+      resetBtn.disabled = false;
+      document.getElementById('cmBtnIcon').classList.remove('hidden');
+      document.getElementById('cmBtnText').textContent = 'Envoyer la demande';
+      document.getElementById('cmBtnSpinner').classList.add('hidden');
+
+      document.getElementById('contactModalProperty').textContent = bien.titre + ' — ' + bien.quartier + ', Bangui (Réf. ' + bien.reference + ')';
+      document.getElementById('cmMessage').value = 'Bonjour, je souhaite visiter le bien : ' + bien.titre + ' (' + bien.reference + '). Merci de me contacter pour organiser une visite.';
+
+      var msg = 'Bonjour, je suis intéressé(e) par le bien "' + bien.titre + '" (Réf. ' + bien.reference + '). Souhaitez-vous organiser une visite ?';
+      document.getElementById('cmWhatsAppBtn').href = 'https://wa.me/33XXXXXXXXX?text=' + encodeURIComponent(msg);
+
+      document.getElementById('contactModalOverlay').classList.add('show');
+      document.body.style.overflow = 'hidden';
+    };
+
+    window.closeContactModal = function() {
+      document.getElementById('contactModalOverlay').classList.remove('show');
+      document.body.style.overflow = '';
+    };
+
+    // Form submission
+    document.getElementById('contactModalForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      var name = document.getElementById('cmName').value.trim();
+      var phone = document.getElementById('cmPhone').value.trim();
+
+      if (!name || !phone) return;
+
+      var btn = document.getElementById('cmSubmitBtn');
+      var icon = document.getElementById('cmBtnIcon');
+      var text = document.getElementById('cmBtnText');
+      var spinner = document.getElementById('cmBtnSpinner');
+
+      btn.disabled = true;
+      icon.classList.add('hidden');
+      text.textContent = 'Envoi en cours…';
+      spinner.classList.remove('hidden');
+
+      setTimeout(function() {
+        document.getElementById('contactModalForm').classList.add('hidden');
+        document.getElementById('contactModalSuccess').classList.remove('hidden');
+
+        setTimeout(function() {
+          document.getElementById('contactModalForm').classList.remove('hidden');
+          document.getElementById('contactModalSuccess').classList.add('hidden');
+          btn.disabled = false;
+          icon.classList.remove('hidden');
+          text.textContent = 'Envoyer la demande';
+          spinner.classList.add('hidden');
+          document.getElementById('cmName').value = '';
+          document.getElementById('cmPhone').value = '';
+          document.getElementById('cmEmail').value = '';
+        }, 3000);
+      }, 1200);
+    });
+
+    // Close contact modal on overlay click
+    document.getElementById('contactModalOverlay').addEventListener('click', function(e) {
+      if (e.target === this) closeContactModal();
+    });
+
+    // Store the data globally for the contact modal to access
+
+    // ===== Mini Preview Modal =====
+    var currentPreviewId = null;
+
+    window.openPreviewModal = function(id) {
+      var bien = window._vedettesData.find(function(b) { return b.id === id; });
+      if (!bien) return;
+      currentPreviewId = id;
+
+      document.getElementById('previewImg').src = bien.images[0];
+      document.getElementById('previewImg').alt = bien.titre;
+      document.getElementById('previewTitle').textContent = bien.titre;
+      document.getElementById('previewLocation').innerHTML = '<i class="fa-solid fa-location-dot text-gold/70"></i> ' + bien.quartier + ', Bangui';
+      document.getElementById('previewPrice').textContent = formatPrix(bien.prix);
+      document.getElementById('previewPriceFCFA').textContent = formatPrixFCFA(bien.prix_fcfa);
+      document.getElementById('previewDesc').textContent = bien.description;
+      document.getElementById('previewType').textContent = bien.type;
+
+      // Badge
+      var badge = document.getElementById('previewBadge');
+      if (bien.badge) {
+        badge.style.display = '';
+        badge.textContent = bien.badge;
+        badge.className = 'absolute top-3 left-3 px-2.5 py-0.5 rounded text-[0.7rem] font-bold ' +
+          (bien.badgeColor === 'gold' ? 'bg-gold text-navy-fonce' : 'bg-navy text-white');
+      } else {
+        badge.style.display = 'none';
+      }
+
+      // Infos (surface, chambres)
+      var infosHtml = '';
+      if (bien.surface) infosHtml += '<span class="text-[0.75rem] text-[#555] flex items-center gap-1"><i class="fa-regular fa-compass text-gold/70"></i>' + bien.surface + ' m²</span>';
+      if (bien.chambres) infosHtml += '<span class="text-[0.75rem] text-[#555] flex items-center gap-1"><i class="fa-regular fa-bed text-gold/70"></i>' + bien.chambres + ' ch.</span>';
+      if (bien.sdb) infosHtml += '<span class="text-[0.75rem] text-[#555] flex items-center gap-1"><i class="fa-regular fa-bath text-gold/70"></i>' + bien.sdb + ' sdb</span>';
+      document.getElementById('previewInfos').innerHTML = infosHtml;
+
+      document.getElementById('previewModalOverlay').classList.add('show');
+      document.body.style.overflow = 'hidden';
+    };
+
+    window.closePreviewModal = function() {
+      document.getElementById('previewModalOverlay').classList.remove('show');
+      document.body.style.overflow = '';
+    };
+
+    // Close preview modal on overlay click
+    document.getElementById('previewModalOverlay').addEventListener('click', function(e) {
+      if (e.target === this) closePreviewModal();
+    });
+
+    // ===== Detail Modal Functions =====
+    var currentModalImages = [];
+    var currentModalIdx = 0;
+    var currentModalId = null;
+
+    window.openModal = function(id) {
+      closePreviewModal(); // ferme le mini modal avant d'ouvrir le full
+      var bien = window._vedettesData.find(function(b) { return b.id === id; });
+      if (!bien) return;
+      currentModalId = id;
+
+      document.getElementById('modalTitle').textContent = bien.titre;
+      document.getElementById('modalLocation').innerHTML = '<i class="fa-solid fa-location-dot text-gold/70"></i> ' + bien.localisation;
+      document.getElementById('modalPrice').textContent = formatPrix(bien.prix);
+      document.getElementById('modalPriceFCFA').textContent = formatPrixFCFA(bien.prix_fcfa);
+      document.getElementById('modalDesc').textContent = bien.description;
+      document.getElementById('modalRef').textContent = 'Réf. ' + bien.reference;
+
+      // Badge
+      var badge = document.getElementById('modalBadge');
+      if (bien.badge) {
+        badge.style.display = '';
+        badge.textContent = bien.badge;
+        badge.className = 'absolute top-3 right-3 px-3 py-1 rounded text-[0.72rem] font-bold ' +
+          (bien.badgeColor === 'gold' ? 'bg-gold text-navy-fonce' : 'bg-navy text-white');
+      } else {
+        badge.style.display = 'none';
+      }
+
+      // Infos
+      var infosHtml = '';
+      if (bien.type) infosHtml += '<div class="flex items-center gap-1.5"><span class="font-semibold text-navy">Type :</span> ' + bien.type + '</div>';
+      if (bien.surface) infosHtml += '<div class="flex items-center gap-1.5"><span class="font-semibold text-navy">Surface :</span> ' + bien.surface + ' m²</div>';
+      if (bien.chambres) infosHtml += '<div class="flex items-center gap-1.5"><span class="font-semibold text-navy">Chambres :</span> ' + bien.chambres + '</div>';
+      if (bien.sdb) infosHtml += '<div class="flex items-center gap-1.5"><span class="font-semibold text-navy">Salles d\'eau :</span> ' + bien.sdb + '</div>';
+      if (bien.pieces) infosHtml += '<div class="flex items-center gap-1.5"><span class="font-semibold text-navy">Pièces :</span> ' + bien.pieces + '</div>';
+      document.getElementById('modalInfos').innerHTML = infosHtml;
+
+      // Features
+      document.getElementById('modalFeatures').innerHTML = bien.caracteristiques.map(function(f) {
+        return '<span class="px-2.5 py-1 bg-gris rounded text-[0.78rem] text-[#555] flex items-center gap-1.5"><i class="fa-solid fa-check text-gold text-[0.7rem]"></i>' + f + '</span>';
+      }).join('');
+
+      // WhatsApp
+      var msg = 'Bonjour, je suis intéressé(e) par le bien "' + bien.titre + '" (Réf. ' + bien.reference + '). Pouvez-vous me donner plus d\'informations ?';
+      document.getElementById('modalWhatsAppBtn').href = 'https://wa.me/33XXXXXXXXX?text=' + encodeURIComponent(msg);
+
+      // Carousel
+      currentModalImages = bien.images;
+      currentModalIdx = 0;
+      renderModalCarousel();
+
+      document.getElementById('modalOverlay').classList.add('show');
+      document.body.style.overflow = 'hidden';
+    };
+
+    window.closeModal = function() {
+      document.getElementById('modalOverlay').classList.remove('show');
+      document.body.style.overflow = '';
+    };
+
+    function renderModalCarousel() {
+      var carousel = document.getElementById('modalCarousel');
+      var dots = document.getElementById('modalDots');
+      if (!carousel || !dots) return;
+      carousel.innerHTML = currentModalImages.map(function(img) {
+        return '<div class="min-w-full h-full"><img src="' + img + '" class="w-full h-full object-cover"></div>';
+      }).join('');
+      dots.innerHTML = currentModalImages.map(function(_, i) {
+        return '<div class="w-2 h-2 rounded-full ' + (i === currentModalIdx ? 'bg-white' : 'bg-white/40') + ' cursor-pointer" onclick="goModalImage(' + i + ')"></div>';
+      }).join('');
+      carousel.style.transform = 'translateX(-' + (currentModalIdx * 100) + '%)';
+    }
+
+    window.nextModalImage = function() {
+      if (currentModalIdx < currentModalImages.length - 1) {
+        currentModalIdx++;
+        renderModalCarousel();
+      }
+    };
+
+    window.prevModalImage = function() {
+      if (currentModalIdx > 0) {
+        currentModalIdx--;
+        renderModalCarousel();
+      }
+    };
+
+    window.goModalImage = function(n) {
+      currentModalIdx = n;
+      renderModalCarousel();
+    };
+
+    // Close detail modal on overlay click
+    document.getElementById('modalOverlay').addEventListener('click', function(e) {
+      if (e.target === this) closeModal();
+    });
+
+    // Close both modals on Escape
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        closePreviewModal();
+        closeModal();
+        closeContactModal();
+      }
+    });
+
+    })();
+  </script>
+</body>
+</html>
